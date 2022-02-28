@@ -12,7 +12,6 @@
 
     body {
         background-color: #171616;
-        align-items: center;
     }
     .Buttons {
         margin-left: 20px;
@@ -37,6 +36,7 @@
         background-color: rgb(160, 0, 0);
     }
     .Button {
+        width: 200px;
         cursor: pointer;
         padding-left: 10px;
         padding-right: 10px;
@@ -49,6 +49,13 @@
     .Button:hover {
         background-color: rgb(255, 239, 93);
     }
+
+    @media (max-width: 767px) {
+        .Button {
+            width: 150px;
+            font-size: 10px;
+        }
+      }
 </style>
 
 <script>
@@ -59,6 +66,26 @@
     function Moaning_Ear_Rape() {
         document.getElementById('Moaning').play();
     }
+    function Talking_Ben_Laugh() {
+        Stop_all()
+        document.getElementById('BenLaugh').currentTime=0;
+        document.getElementById('BenLaugh').play();
+    }
+    function Pussy() {
+        Stop_all()
+        document.getElementById('Pussy').currentTime=0;
+        document.getElementById('Pussy').play();
+    }
+    function Titanic() {
+        Stop_all()
+        document.getElementById('Titanic').currentTime=0;
+        document.getElementById('Titanic').play();
+    }
+    function Rickroll() {
+        Stop_all()
+        document.getElementById('Rickroll').currentTime=0;
+        document.getElementById('Rickroll').play();
+    }
 </script>
 
 <html>
@@ -68,13 +95,10 @@
         <button onclick="Stop_all()" class="Stop_Button"></button>
         <div class="Buttons">
             <button class="Button" onclick="Moaning_Ear_Rape()">Moaning [Ear Rape]<audio id="Moaning" src='sounds/ear-rape-moaning-girl-troll-sound-crappy-long-edition-loudtronix-hq.mp3'></audio></button>
-            <button class="Button">Click Me</button>
-            <button class="Button">Click Me</button>
-            <button class="Button">Click Me</button>
-            <button class="Button">Click Me</button>
-            <button class="Button">Click Me</button>
-            <button class="Button">Click Me</button>
-            <button class="Button">Click Me</button>
+            <button class="Button" onclick="Talking_Ben_Laugh()">Talking Ben Laugh<audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
+            <button class="Button" onclick="Pussy()">Pussy<audio id="Pussy" src='sounds/pussy-sound-effect_1.mp3'></audio></button>
+            <button class="Button" onclick="Titanic()">Titanic<audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
+            <button class="Button" onclick="Rickroll()">Rick Astley - Never Gonna Give You up<audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
         </div>
     </body>
 </html>
