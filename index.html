@@ -85,6 +85,8 @@
         for(i=0; i<sounds.length; i++) sounds[i].pause();
     };
     function Moaning_Ear_Rape() {
+        Stop_all()
+        document.getElementById('Moaning').currentTime=0;
         document.getElementById('Moaning').play();
     }
     function Talking_Ben_Laugh() {
