@@ -2,42 +2,78 @@
 
 <style>
     body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+  }
+
+   body::-webkit-scrollbar {
+   display: none; /* for Chrome, Safari, and Opera */
+   }
+
+    body {
+        background-color: aliceblue;
         align-items: center;
     }
     .Buttons {
-        margin: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-top: 100px;
         width: 100%;
-        align-items: stretch;
+        align-items: center;
+        justify-content: space-between
     }
-    button {
+    .Stop_Button {
         cursor: pointer;
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
         border: none;
         padding: 25px;
         border-radius: 12px;
-        background-color: rgb(199, 199, 199);
+        width: 100%;
+        background-color: rgb(224, 0, 0);
     }
-    button:hover {
-        background-color: rgb(180, 180, 180);
+    .Stop_Button:hover {
+        background-color: rgb(160, 0, 0);
+    }
+    .Button {
+        cursor: pointer;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        padding: 25px;
+        border-radius: 12px;
+        background-color: rgb(255, 248, 147);
+    }
+    .Button:hover {
+        background-color: rgb(255, 239, 93);
     }
 </style>
+
+<script>
+    function Stop_all(){
+        var sounds = document.getElementsByTagName('audio');
+        for(i=0; i<sounds.length; i++) sounds[i].pause();
+    };
+    function Moaning_Ear_Rape() {
+        document.getElementById('Moaning').play();
+    }
+</script>
 
 <html>
     <head>
     </head>
     <body>
+        <button onclick="Stop_all()" class="Stop_Button"></button>
         <div class="Buttons">
-            <button >Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
-            <button>Click Me</button>
+            <button class="Button" onclick="Moaning_Ear_Rape()">Moaning [Ear Rape]<audio id="Moaning" src='sounds/ear-rape-moaning-girl-troll-sound-crappy-long-edition-loudtronix-hq.mp3'></audio></button>
+            <button class="Button">Click Me</button>
+            <button class="Button">Click Me</button>
+            <button class="Button">Click Me</button>
+            <button class="Button">Click Me</button>
+            <button class="Button">Click Me</button>
+            <button class="Button">Click Me</button>
+            <button class="Button">Click Me</button>
         </div>
     </body>
 </html>
