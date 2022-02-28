@@ -52,7 +52,8 @@
         background-color: rgb(133, 1, 1);
     }
     .Button {
-        width: 200px;
+        font-size: 20px;
+        width: 280px;
         cursor: pointer;
         padding-left: 10px;
         padding-right: 10px;
@@ -66,10 +67,14 @@
         background-color: rgb(255, 239, 93);
     }
 
+    p {
+        vertical-align: top;
+    }
+
     @media (max-width: 767px) {
         .Button {
-            width: 150px;
-            font-size: 10px;
+            width: 200px;
+            font-size: 13px;
         }
       }
 </style>
@@ -116,12 +121,12 @@
         <h1>Ultimate Soundboard</h1>
         <button onclick="Stop_all()" class="Stop_Button"></button>
         <div class="Buttons">
-            <button class="Button" onclick="Moaning_Ear_Rape()">Moaning [Ear Rape]<audio id="Moaning" src='sounds/ear-rape-moaning-girl-troll-sound-crappy-long-edition-loudtronix-hq.mp3'></audio></button>
-            <button class="Button" onclick="Talking_Ben_Laugh()">Talking Ben Laugh<audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
-            <button class="Button" onclick="Pussy()">Pussy<audio id="Pussy" src='sounds/pussy-sound-effect_1.mp3'></audio></button>
-            <button class="Button" onclick="Titanic()">Titanic Soundtrack<audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
-            <button class="Button" onclick="Rickroll()">Rick Astley - Never Gonna Give You up<audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
-            <button class="Button" onclick="TitanicParody()">Titanic Flute Soundtrack<audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
+            <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio id="Moaning" src='sounds/ear-rape-moaning-girl-troll-sound-crappy-long-edition-loudtronix-hq.mp3'></audio></button>
+            <button class="Button" onclick="Talking_Ben_Laugh()"><p>Talking Ben Laugh</p><audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
+            <button class="Button" onclick="Pussy()"><p>Pussy</p><audio id="Pussy" src='sounds/pussy-sound-effect_1.mp3'></audio></button>
+            <button class="Button" onclick="Titanic()"><p>Titanic Soundtrack</p><audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
+            <button class="Button" onclick="Rickroll()"><p>Never Gonna Give You up</p><audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
+            <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
         </div>
     </body>
 </html>
