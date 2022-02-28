@@ -112,6 +112,11 @@
         document.getElementById('TitanicParody').currentTime=0;
         document.getElementById('TitanicParody').play();
     }
+    function EmotionalDamage() {
+        Stop_all()
+        document.getElementById('EmotionalDamage').currentTime=0;
+        document.getElementById('EmotionalDamage').play();
+    }
 </script>
 
 <html>
@@ -127,6 +132,7 @@
             <button class="Button" onclick="Titanic()"><p>Titanic Soundtrack</p><audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
             <button class="Button" onclick="Rickroll()"><p>Never Gonna Give You up</p><audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
             <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
+            <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
         </div>
     </body>
 </html>
