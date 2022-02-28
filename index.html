@@ -124,6 +124,11 @@
         document.getElementById('TheNextEpisode').currentTime=0;
         document.getElementById('TheNextEpisode').play();
     }
+    function StillDre() {
+        Stop_all()
+        document.getElementById('Still Dre').currentTime=0;
+        document.getElementById('Still Dre').play();
+    }
 </script>
 
 <html>
@@ -135,7 +140,7 @@
         <h1>Ultimate Soundboard</h1>
         <button onclick="Stop_all()" class="Stop_Button"></button>
         <div class="Buttons">
-            <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio id="Moaning" src='sounds/ear-rape-moaning-girl-troll-sound-crappy-long-edition-loudtronix-hq.mp3'></audio></button>
+            <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio id="Moaning" src='sounds/MoaningEarrape.mp3'></audio></button>
             <button class="Button" onclick="Talking_Ben_Laugh()"><p>Talking Ben Laugh</p><audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
             <button class="Button" onclick="Pussy()"><p>Pussy</p><audio id="Pussy" src='sounds/pussy-sound-effect_1.mp3'></audio></button>
             <button class="Button" onclick="Titanic()"><p>Titanic Soundtrack</p><audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
@@ -143,6 +148,7 @@
             <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
             <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
             <button class="Button" onclick="TheNextEpisode()"><p>The Next Episode</p><audio id="TheNextEpisode" src='sounds/TheNextEpisode.mp3'></audio></button>
+            <button class="Button" onclick="StillDre()"><p>Still D.R.E</p><audio id="Still Dre" src='sounds/Still Dre.mp3'></audio></button>
         </div>
     </body>
 </html>
