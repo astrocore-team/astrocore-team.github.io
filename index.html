@@ -119,6 +119,11 @@
         document.getElementById('EmotionalDamage').currentTime=0;
         document.getElementById('EmotionalDamage').play();
     }
+    function MyHeartWillGoOn() {
+        Stop_all()
+        document.getElementById('MyHeartWillGoOn').currentTime=0;
+        document.getElementById('MyHeartWillGoOn').play();
+    }
 </script>
 
 <html>
@@ -135,6 +140,7 @@
             <button class="Button" onclick="Rickroll()"><p>Never Gonna Give You up</p><audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
             <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
             <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
+            <button class="Button" onclick="MyHeartWillGoOn()"><p>My Heart will go on</p><audio id="MyHeartWillGoOn" src='sounds/MyHeartWillGoOn'></audio></button>
         </div>
     </body>
 </html>
