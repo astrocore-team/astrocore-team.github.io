@@ -32,7 +32,7 @@
     }
     .Stop_Button {
         float: left;
-        background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/istockphoto-1156490264-612x612-removebg-preview.png");
+        background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 75px, 75px;
@@ -119,10 +119,10 @@
         document.getElementById('EmotionalDamage').currentTime=0;
         document.getElementById('EmotionalDamage').play();
     }
-    function MyHeartWillGoOn() {
+    function TheNextEpisode() {
         Stop_all()
-        document.getElementById('MyHeartWillGoOn').currentTime=0;
-        document.getElementById('MyHeartWillGoOn').play();
+        document.getElementById('TheNextEpisode').currentTime=0;
+        document.getElementById('TheNextEpisode').play();
     }
 </script>
 
@@ -140,6 +140,7 @@
             <button class="Button" onclick="Rickroll()"><p>Never Gonna Give You up</p><audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
             <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
             <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
+            <button class="Button" onclick="TheNextEpisode()"><p>The Next Episode</p><audio id="TheNextEpisode" src='sounds/TheNextEpisode.mp3'></audio></button>
         </div>
     </body>
 </html>
