@@ -81,7 +81,6 @@
     .Button + .Button { margin-top: 10px; }
 
     span {
-        background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Web_Photo_Editor%20(5).jpg);
         border-width: 0px 0px 4px 0px;
         border-style: inset;
         border-color: rgb(255, 255, 255);
@@ -177,6 +176,11 @@ function myFunction() {
         document.getElementById('Still Dre').currentTime=0;
         document.getElementById('Still Dre').play();
     }
+    function Mundiantobachke() {
+        Stop_all()
+        document.getElementById('Mundiantobachke').currentTime=0;
+        document.getElementById('Mundiantobachke').play();
+    }
 </script>
 
 <html>
@@ -202,6 +206,7 @@ function myFunction() {
                 <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
                 <button class="Button" onclick="TheNextEpisode()"><p>The Next Episode</p><audio id="TheNextEpisode" src='sounds/TheNextEpisode.mp3'></audio></button>
                 <button class="Button" onclick="StillDre()"><p>Still D.R.E</p><audio id="Still Dre" src='sounds/Still Dre.mp3'></audio></button>
+                  <button class="Button" onclick="Mundiantobachke()"><p>Mundian to Bach Ke [BASS BOOSTED]</p><audio id="Mundiantobachke" src='sounds/Mundian to Bach Ke [Bass Boosted].mp3'></audio></button>
               </ul>
         </div>
     </body>
