@@ -2,8 +2,6 @@
 <style>
 
     body {
-        margin-left: 0;
-        margin-top: 0;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll; 
@@ -14,23 +12,26 @@
    }
 
     body {
-        background-color: #1d1d1d;
+        background-color: #171616;
     }
     body h1 {
         width: 100%;
-        font-size: 60px;
+        font-size: 80px;
         text-align: center;
         color: rgb(255, 255, 255);
     }
     .Buttons {
         text-align: center;
-        padding-top: 325px;
+        margin-left: 20px;
+        margin-right: 30px;
+        padding-top: 100px;
         width: 100%;
         font-family: "Segoe UI", Tahoma, sans-serif;
         align-items: center;
         justify-content: space-between
     }
     .Stop_Button {
+        float: left;
         background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -44,14 +45,13 @@
         border-style: outset;
         border-color: white;
         border-radius: 12px;
-        width: 90%;
+        width: 100%;
         background-color: rgb(168, 0, 0);
     }
     .Stop_Button:hover {
         background-color: rgb(133, 1, 1);
     }
     .Button {
-        display: unset;
         font-size: 20px;
         width: 280px;
         cursor: pointer;
@@ -76,60 +76,13 @@
             width: 200px;
             font-size: 13px;
         }
-    }
-
-    .Button + .Button { margin-top: 10px; }
-
-    span {
-        border-width: 0px 0px 4px 0px;
-        border-style: inset;
-        border-color: rgb(255, 255, 255);
-        text-align: center;
-        margin-left: 0;
-        padding: 20px;
-        position: fixed;
-        width: 100%;
-        background-color: rgb(15, 15, 15);
-    }
-
-    input {
-        height: 40px;
-        width: 150px;
-        border-radius: 12px;
-    }
-
-    #myInput {
-  background-image: url('assets/av6584c34aabb39f00a10.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
+      }
 </style>
 
 <script>
-function myFunction() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('Button');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="unset";                 
-        }
-    }
-}
-
     function Stop_all(){
         var sounds = document.getElementsByTagName('audio');
         for(i=0; i<sounds.length; i++) sounds[i].pause();
-        for(i=0; i<sounds.length; i++) sounds[i].currentTime=0;
     };
     function Moaning_Ear_Rape() {
         Stop_all()
@@ -176,6 +129,11 @@ function myFunction() {
         document.getElementById('Still Dre').currentTime=0;
         document.getElementById('Still Dre').play();
     }
+    function Mundiantobachke() {
+        Stop_all()
+        document.getElementById('Mundiantobachke').currentTime=0;
+        document.getElementById('Mundiantobachke').play();
+    }
 </script>
 
 <html>
@@ -184,24 +142,19 @@ function myFunction() {
         <title>UltimateSoundboard</title>
     </head>
     <body>
-        <span>
-            <h1>Ultimate Soundboard</h1>
-            <input id="searchbar" onkeyup="myFunction()" type="text"
-            name="search" placeholder="Search Sound Effects...">
-            <button onclick="Stop_all()" class="Stop_Button"></button>
-        </span>
+        <h1>Ultimate Soundboard</h1>
+        <button onclick="Stop_all()" class="Stop_Button"></button>
         <div class="Buttons">
-            <ul id="myUL">
-                <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio id="Moaning" src='sounds/MoaningEarrape.mp3'></audio></button>
-                <button class="Button" onclick="Talking_Ben_Laugh()"><p>Talking Ben Laugh</p><audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
-                <button class="Button" onclick="Pussy()"><p>Pussy</p><audio id="Pussy" src='sounds/pussy-sound-effect_1.mp3'></audio></button>
-                <button class="Button" onclick="Titanic()"><p>Titanic Soundtrack</p><audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
-                <button class="Button" onclick="Rickroll()"><p>Never Gonna Give You up</p><audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
-                <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
-                <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
-                <button class="Button" onclick="TheNextEpisode()"><p>The Next Episode</p><audio id="TheNextEpisode" src='sounds/TheNextEpisode.mp3'></audio></button>
-                <button class="Button" onclick="StillDre()"><p>Still D.R.E</p><audio id="Still Dre" src='sounds/Still Dre.mp3'></audio></button>
-              </ul>
+            <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio id="Moaning" src='sounds/MoaningEarrape.mp3'></audio></button>
+            <button class="Button" onclick="Talking_Ben_Laugh()"><p>Talking Ben Laugh</p><audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
+            <button class="Button" onclick="Pussy()"><p>Pussy</p><audio id="Pussy" src='sounds/pussy-sound-effect_1.mp3'></audio></button>
+            <button class="Button" onclick="Titanic()"><p>Titanic Soundtrack</p><audio id="Titanic" src='sounds/my-heart-will-go-on-hd.mp3'></audio></button>
+            <button class="Button" onclick="Rickroll()"><p>Never Gonna Give You up</p><audio id="Rickroll" src='sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3'></audio></button>
+            <button class="Button" onclick="TitanicParody()"><p>Titanic Flute</p><audio id="TitanicParody" src='sounds/titanic-parody-mp3cut.mp3'></audio></button>
+            <button class="Button" onclick="EmotionalDamage()"><p>Emotional damage</p><audio id="EmotionalDamage" src='sounds/Emotional Damage.mp3'></audio></button>
+            <button class="Button" onclick="TheNextEpisode()"><p>The Next Episode</p><audio id="TheNextEpisode" src='sounds/TheNextEpisode.mp3'></audio></button>
+            <button class="Button" onclick="StillDre()"><p>Still D.R.E</p><audio id="Still Dre" src='sounds/Still Dre.mp3'></audio></button>
+            <button class="Button" onclick="Mundiantobachke()"><p>Mundian to Bach Ke [BASS BOOSTED]</p><audio id="Mundiantobachke" src='sounds/Mundian to Bach Ke [Bass Boosted].mp3'></audio></button>
         </div>
     </body>
 </html>
