@@ -125,6 +125,15 @@
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
 }
+
+.panic {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 400px;
+    bottom: 10px;
+}
 </style>
 
 <script>
@@ -321,5 +330,6 @@ function myFunction() {
                 <button class="Button" onclick="Wrong()"><p>Wrong</p><audio id="Wrong" src='sounds/wrong-answer-sound-effect.mp3'></audio></button>
               </ul>
         </div>
+        <a href="https://google.com" title="Panic Button To redirect you from this site" class="panic"><img src="assets/panic-btn.png" width="50px" height="50px"></img></a>
     </body>
 </html>
