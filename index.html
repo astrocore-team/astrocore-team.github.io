@@ -413,6 +413,11 @@ function myFunction() {
         document.getElementById('AmongUsMenu').currentTime=0;
         document.getElementById('AmongUsMenu').play();
     }
+    function AmongUsDrip() {
+        Stop_all()
+        document.getElementById('AmongUsDrip').currentTime=0;
+        document.getElementById('AmongUsDrip').play();
+    }
 </script>
 
 <html>
@@ -486,7 +491,8 @@ function myFunction() {
                 <button class="Button" onclick="ToBeContinued()"><p>To Be Continued</p><audio id="ToBeContinued" src='sounds/untitled_1071.mp3'></audio></button>
                 <button class="Button" onclick="YourGay()"><p>You're Gay</p><audio id="YourGay" src='sounds/your-gay-super-loud.mp3'></audio></button>
                 <button class="Button" onclick="DiscordPing()"><p>Discord Ping</p><audio id="DiscordPing" src='sounds/Discordping.mp3'></audio></button>
-                <button class="Button" onclick="AmongUsMenu()"><p>Among us [Main menu]</p><audio id="AmongUsMenu" src='sounds/AmongUsMenu.mp3'></audio></button>
+                <button class="Button" onclick="AmongUsMenu()"><p>Among us (Main menu)</p><audio id="AmongUsMenu" src='sounds/AmongUsMenu.mp3'></audio></button>
+                <button class="Button" onclick="AmongUsDrip()"><p>Among us (Drip song)</p><audio id="AmongUsDrip" src='sounds/AmongUsDrip.mp3'></audio></button>
               </ul>
         </div>
         <a href="https://google.com" title="Panic Button To redirect you from this site" class="panic"><img src="assets/panic-btn.png" width="50px" height="50px"></img></a>
