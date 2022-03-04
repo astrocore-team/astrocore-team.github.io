@@ -360,3 +360,8 @@ function DontEverBuyWeed() {
     document.getElementById('DontEverBuyWeed').currentTime=0;
     document.getElementById('DontEverBuyWeed').play();
 }
+function Nigga() {
+    Stop_all()
+    document.getElementById('Nigga').currentTime=0;
+    document.getElementById('Nigga').play();
+}
