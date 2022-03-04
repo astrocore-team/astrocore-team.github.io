@@ -5,9 +5,7 @@ function RandomSound() {
     var audioElement = document.getElementById(id);
     audioElement.play();
 }
-function lightmode() {
-    document.getElementById(id).style.backgroundImage = "url('img_tree.png')";
-}
+
 function myFunction() {
 let input = document.getElementById('searchbar').value
 input=input.toLowerCase();

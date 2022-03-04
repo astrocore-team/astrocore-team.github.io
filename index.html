@@ -37,7 +37,7 @@
     }
     .Buttons {
         text-align: center;
-        padding-top: 325px;
+        padding-top: 345px;
         width: 100%;
         font-family: "Segoe UI", Tahoma, sans-serif;
         align-items: center;
@@ -158,12 +158,11 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
-        <span>
+        <span id="topbar">
             <h1>Ultimate Soundboard</h1>
             <input id="searchbar" onkeyup="myFunction()" type="text"
             name="search" placeholder="Search Sound Effects...">
             <button onclick="Stop_all()" class="Stop_Button"></button>
-            <input type="checkbox" id="myCheck" onclick="myFunction()">
         </span>
         <div class="Buttons">
             <ul id="myUL">
