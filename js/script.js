@@ -345,3 +345,8 @@ function winningson() {
     document.getElementById('winningson').currentTime=0;
     document.getElementById('winningson').play();
 }
+function youtouchmytralala() {
+    Stop_all()
+    document.getElementById('youtouchmytralala').currentTime=0;
+    document.getElementById('youtouchmytralala').play();
+}
