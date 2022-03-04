@@ -1,11 +1,10 @@
 function RandomSound() {
-    mySounds =  document.getElementsByTagName('audio');
-    var index = Math.floor(Math.random() * 1000) % mySounds.length;
-    var id = mySounds[index];
-    var audioElement = document.getElementById(id);
-    audioElement.play();
+    Stop_all()
+    let elements = document.getElementsByTagName('audio');;
+    let arrayOfElements = Array.from(elements);
+    var item = arrayOfElements[Math.floor(Math.random()*arrayOfElements.length)];
+    item.play()
 }
-
 function myFunction() {
 let input = document.getElementById('searchbar').value
 input=input.toLowerCase();
