@@ -320,3 +320,28 @@ function CaillouOhYesDaddy() {
     document.getElementById('CaillouOhYesDaddy').currentTime=0;
     document.getElementById('CaillouOhYesDaddy').play();
 }
+function Bazinga() {
+    Stop_all()
+    document.getElementById('Bazinga').currentTime=0;
+    document.getElementById('Bazinga').play();
+}
+function FortniteBattlePass() {
+    Stop_all()
+    document.getElementById('FortniteBattlePass').currentTime=0;
+    document.getElementById('FortniteBattlePass').play();
+}
+function StopitGetSomeHelp() {
+    Stop_all()
+    document.getElementById('StopitGetSomeHelp').currentTime=0;
+    document.getElementById('StopitGetSomeHelp').play();
+}
+function applause() {
+    Stop_all()
+    document.getElementById('applause').currentTime=0;
+    document.getElementById('applause').play();
+}
+function winningson() {
+    Stop_all()
+    document.getElementById('winningson').currentTime=0;
+    document.getElementById('winningson').play();
+}
