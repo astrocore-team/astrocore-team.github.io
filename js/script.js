@@ -355,3 +355,8 @@ function nutbutton() {
     document.getElementById('nutbutton').currentTime=0;
     document.getElementById('nutbutton').play();
 }
+function DontEverBuyWeed() {
+    Stop_all()
+    document.getElementById('DontEverBuyWeed').currentTime=0;
+    document.getElementById('DontEverBuyWeed').play();
+}
