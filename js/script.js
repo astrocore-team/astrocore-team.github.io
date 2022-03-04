@@ -350,3 +350,8 @@ function youtouchmytralala() {
     document.getElementById('youtouchmytralala').currentTime=0;
     document.getElementById('youtouchmytralala').play();
 }
+function nutbutton() {
+    Stop_all()
+    document.getElementById('nutbutton').currentTime=0;
+    document.getElementById('nutbutton').play();
+}
