@@ -365,3 +365,8 @@ function Nigga() {
     document.getElementById('Nigga').currentTime=0;
     document.getElementById('Nigga').play();
 }
+function LoveMeLongTime() {
+    Stop_all()
+    document.getElementById('LoveMeLongTime').currentTime=0;
+    document.getElementById('LoveMeLongTime').play();
+}
