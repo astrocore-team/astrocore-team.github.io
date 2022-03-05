@@ -18,10 +18,10 @@ html {
   }
 
 #bg {
-    /*background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                linear-gradient(to top right, #594e87, #58466f, #8c5470, #E05352, #C57A6E, #F59B96, #F27684, #EC586D, #D34052, #C53F4A, #E77A64);*/
-    background: rgb(195,55,100);
-    background: linear-gradient(to top right, rgba(195,55,100,1), rgba(29,38,113,1));
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                linear-gradient(to top right, #594e87, #58466f, #8c5470, #E05352, #C57A6E, #F59B96, #F27684, #EC586D, #D34052, #C53F4A, #E77A64);
+    /*background: rgb(195,55,100);
+    background: linear-gradient(to top right, rgba(195,55,100,1), rgba(29,38,113,1));*/
     position: absolute;
     top: 0;
     left: 0;
