@@ -13,9 +13,8 @@
    ```
    contact@astrocore.net
    ```
-  *Here is the source code!* 
    <hr width=100%>
-   
+  *Here is the source code!* 
    * [Download](https://github.com/astrocore-team/Ultimatesoundboard/archive/refs/heads/main.zip)
       
 # Preview
