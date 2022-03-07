@@ -11,7 +11,7 @@
 # How to Contribute
   *If you want to contribute to the other site! send a pull request with the added code, or send us an email with the audio file you want to add to the site!*
    ```
-   Contact@astrocore.net
+   contact@astrocore.net
    ```
      
    
