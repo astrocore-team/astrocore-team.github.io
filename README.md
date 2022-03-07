@@ -20,6 +20,12 @@
       
 # Preview
 ***Coming soon***
+
+## License
+
+Copyright (c) Astrocore. All rights reserved.
+
+Licensed under the [MIT](LICENSE.txt) license.
      
   
      
