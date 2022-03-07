@@ -25,7 +25,7 @@
 # License
 *Copyright (c) Astrocore. All rights reserved.*
 
-*Licensed under the [MIT](LICENSE.txt) license.*
+*Licensed under the [CC](LICENSE) license.*
      
   
      
