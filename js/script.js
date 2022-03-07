@@ -370,3 +370,18 @@ function LoveMeLongTime() {
     document.getElementById('LoveMeLongTime').currentTime=0;
     document.getElementById('LoveMeLongTime').play();
 }
+function Talking_Ben_Ben() {
+    Stop_all()
+    document.getElementById('Talking_Ben_Ben').currentTime=0;
+    document.getElementById('Talking_Ben_Ben').play();
+}
+function Talking_Ben_Yes() {
+    Stop_all()
+    document.getElementById('Talking_Ben_Yes').currentTime=0;
+    document.getElementById('Talking_Ben_Yes').play();
+}
+function Talking_Ben_No() {
+    Stop_all()
+    document.getElementById('Talking_Ben_No').currentTime=0;
+    document.getElementById('Talking_Ben_No').play();
+}
