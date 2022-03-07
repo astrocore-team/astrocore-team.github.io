@@ -1,4 +1,6 @@
 # Ultimatesoundboard
+![Website](https://img.shields.io/website?color=light%20green&down_color=red&down_message=Maintenance&label=Website&style=plastic&up_color=Light%20green&up_message=Online&url=https%3A%2F%2Fultimatesoundboard.xyz)
+
 ***A Work in progress Memesoundboard site🔊***
 <hr width=100%>
 
