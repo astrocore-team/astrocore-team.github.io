@@ -27,7 +27,7 @@
 
 *Licensed under the [CC](LICENSE) license.*
 
-<a target="_blank" href="https://creativecommons.org/licenses/"><img src="https://github.com/Astrocore-team/Ultimatesoundboard/blob/main/assets/cc.png?raw=true" alt="Creative commons logo" style="height: 300px; width:350px;">
+<a target="_blank" href="https://creativecommons.org/licenses/"><img src="https://github.com/Astrocore-team/Ultimatesoundboard/blob/main/assets/cc.png?raw=true" alt="Creative commons logo" style="height: 300px; width:350px;"></a>
      
   
      
