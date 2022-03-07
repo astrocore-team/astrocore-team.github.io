@@ -1,4 +1,5 @@
     body {
+        margin-right: 0px;
         margin-left: 0;
         margin-top: 0;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -11,6 +12,8 @@
    }
 
     body {
+        text-align: left;
+        width: 100%;
         background-color: #1d1d1d;
     }
     body h1 {
@@ -41,6 +44,7 @@
         justify-content: space-between
     }
     .Buttons {
+        padding-top: 45px;
         text-align: center;
         width: 100%;
         font-family: "Segoe UI", Tahoma, sans-serif;
@@ -99,6 +103,7 @@
     .Button + .Button { margin-top: 10px; }
 
     span {
+        align-items: center;
         background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
         background-position: top right;
         background-size: cover;
@@ -109,7 +114,7 @@
         margin-left: 0;
         padding: 20px;
         position: fixed;
-        width: 100%;
+        width: 99%;
         background-color: rgb(15, 15, 15);
     }
 
