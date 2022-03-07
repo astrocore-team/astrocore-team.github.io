@@ -14,7 +14,8 @@
    contact@astrocore.net
    ```
   *Here is the source code!* 
-      * [Homepage](https://geosjobby.xyz)
+   * [Homepage](https://geosjobby.xyz)
+      
 # Preview
 ***Coming soon***
      
