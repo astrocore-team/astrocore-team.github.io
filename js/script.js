@@ -19,7 +19,14 @@ for (i = 0; i < x.length; i++) {
     }
 }
 }
-
+function tts() {
+    if(event.keyCode == 13) {
+      var msg = new SpeechSynthesisUtterance();
+      let input = document.getElementById('texttospeech').value
+      msg.text = input;
+      window.speechSynthesis.speak(msg);
+    }
+}
 function Stop_all(){
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].pause();
