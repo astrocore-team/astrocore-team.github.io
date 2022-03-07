@@ -14,8 +14,7 @@
    contact@astrocore.net
    ```
 # Preview
-  <p align=`left`>
- ***Coming soon***
+***Coming soon***
      
   
      
