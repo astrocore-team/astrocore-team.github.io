@@ -1,3 +1,3 @@
 # Ultimatesoundboard
 *A Work in progress Memesoundboard site*
- <hr width=100%>
+<hr width=100%>
