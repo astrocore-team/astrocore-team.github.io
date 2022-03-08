@@ -29,7 +29,7 @@
 # Discord
   *Come join the* **Discord** *if you need support or want to chat with the community!*
 <p align='left'>
- <a target="_blank" href="https://discord.gg/8aVJtkpk2j"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/discord-logo-png-7620.png?raw=true" alt="Discord Invite" style="height: 350px; width:375px;">
+ <a target="_blank" href="https://discord.gg/8aVJtkpk2j"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/discord-logo-png-7620.png?raw=true" alt="Discord Invite" style="height: 350px; width:375px;"></a></p>
     
 # Preview
 ***Coming soon***
