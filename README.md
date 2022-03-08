@@ -23,6 +23,9 @@
 # Creators
   *The creators of Ultimatesoundboard are **Geosjobbydo** and **Figi8Cake**!* **|** *Figi8cake is the owner of [Astrocore](https://Astrocore.net)
 , A company for making digital media. and geosjobbydo is the co-owner for Astrocore*
+ <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/geosjobbydo.png?raw=true" alt="Geosjobbydo's Site" style="height: 350px; width:375px;">
+ 
+ 
 # Preview
 ***Coming soon***
 
