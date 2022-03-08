@@ -1,5 +1,5 @@
 # Ultimatesoundboard
-![Website](https://img.shields.io/website?color=light%20green&down_color=red&down_message=Maintenance&label=Website&style=plastic&up_color=Light%20green&up_message=Online&url=https%3A%2F%2Fultimatesoundboard.xyz) ![Discord](https://img.shields.io/discord/894937415607779349?color=%23521380&label=Discord&logo=Discord&style=plastic)
+![Website](https://img.shields.io/website?color=light%20green&down_color=red&down_message=Maintenance&label=Website&style=plastic&up_color=Light%20green&up_message=Online&url=https%3A%2F%2Fultimatesoundboard.xyz) ![Discord](https://img.shields.io/discord/894937415607779349?color=%23521380&label=Discord&logo=Discord&style=plastic) ![GitHub issues](https://img.shields.io/github/issues-raw/astrocore-team/ultimatesoundboard?color=%231f71a3&label=Pull%20requests&logo=github&style=plastic)
 
 ***A Work in progress Memesoundboard site🔊***
 <hr width=100%>
