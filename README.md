@@ -25,7 +25,10 @@
 , A company for making digital media. and geosjobbydo is the co-owner for Astrocore*
 <p align='left'>
  <a target="_blank" href="https://geosjobby.xyz"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/geosjobbydo.png?raw=true" alt="Geosjobbydo's Site" style="height: 350px; width:375px;"><a target="_blank" href="https://figi8cake.xyz"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/Figi8Cake.png?raw=true" alt="Figi8Cake's Site" style="height: 350px; width:375px;"></p>
- 
+
+# Discord
+  *Come join the* **Discord** *if you need support or want to chat with the community!*
+    
 # Preview
 ***Coming soon***
 
