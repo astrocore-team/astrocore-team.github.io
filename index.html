@@ -61,7 +61,7 @@
         justify-content: space-between
     }
     .Buttons {
-        padding-top: 45px;
+        padding-top: 10px;
         text-align: center;
         width: 100%;
         font-family: "Segoe UI", Tahoma, sans-serif;
@@ -138,21 +138,9 @@
     input {
         height: 40px;
         margin-bottom: 10px;
-        width: 95%;
+        width: 300px;
         border-radius: 12px;
     }
-
-
-    #myInput {
-  background-image: url('assets/av6584c34aabb39f00a10.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
 
 #Random:hover {
     opacity: 0.6;
@@ -170,9 +158,23 @@
 
 #texttospeech {
     width: 300px;
+    transition: width 0.4s ease-in-out;
+}
+
+#texttospeech:focus {
+    width: 500px;
+}
+
+input {
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  width: 500px;
 }
 
 .teae {
+    padding: 0;
     text-align: center;
     width: 100%;
     font-family: "Segoe UI", Tahoma, sans-serif;
@@ -183,11 +185,11 @@
     <body>
         <span id="topbar">
             <h1>Ultimate Soundboard</h1>
-            <input id="searchbar" onkeyup="myFunction()" type="text"
-            name="search" placeholder="Search Sound Effects...">
             <ul class="teae">
+                <input id="searchbar" onkeyup="myFunction()" type="text"
+                name="search" placeholder="Search Sound Effects...">
                 <input id="texttospeech" onkeyup="tts()" type="text"
-                name="Tts" placeholder="Text to Speech. . .">
+                name="Tts" placeholder="Text to Speec...">
             </ul>
             <button onclick="Stop_all()" class="Stop_Button"></button>
         </span>
