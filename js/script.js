@@ -24,7 +24,13 @@ function tts() {
       var msg = new SpeechSynthesisUtterance();
       let input = document.getElementById('texttospeech').value
       msg.text = input;
-      window.speechSynthesis.speak(msg);
+      if (input == 'russia is better than ukraine') {
+          Talking_Ben_No()
+          return
+      }
+      else {
+        window.speechSynthesis.speak(msg);
+      }
     }
 }
 function Stop_all(){
