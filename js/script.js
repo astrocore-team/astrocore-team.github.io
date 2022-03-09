@@ -24,7 +24,7 @@ function tts() {
       var msg = new SpeechSynthesisUtterance();
       let input = document.getElementById('texttospeech').value
       msg.text = input;
-      if (input == 'russia is better than ukraine') {
+      if (input == 'russia is better than ukraine' || input == 'Russia Is Better Than Ukraine' || input == 'Russia is better than Ukraine'){
           Talking_Ben_No()
           return
       }
