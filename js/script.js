@@ -35,6 +35,7 @@ function tts() {
     }
 }
 var osc = null;
+var playing = false;
 function freq() {
     var context = null;
     var usingWebAudio = true;
@@ -45,20 +46,19 @@ function freq() {
     } else {
         usingWebAudio = false;
     }
-    var playing = false;
     let freq = document.getElementById('Frequency').value;
     if(event.keyCode == 13) {
         if (playing == true) {
-            playing = false;
             osc.stop(0);
+            playing = false;
           }
         else {
             Stop_Sounds()
-            playing = true;
             osc = context.createOscillator();
             osc.connect(context.destination);
             osc.frequency.value = freq;
             osc.start(0);
+            playing = true;
           }
     }
 }
