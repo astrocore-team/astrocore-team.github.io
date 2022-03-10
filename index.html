@@ -1,212 +1,7 @@
 <!DOCTYPE html>
 
-<html>
-    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/favicon2.png">
-    <head>
-        <script src="js/script.js"></script>
-        <title>Ultimate Soundboard</title>
-    <meta content="Ultimate Soundboard" property="og:title">
-    <meta content="UltimateSoundboard" property="og:site_name">
-    <meta content="The best Memesound site in Developement" property="og:description">
-    <meta content='https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/favicon2.png' property='og:image'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9250353244773023"
-        crossorigin="anonymous"></script>
-    </head>
-    <style>
-            body {
-        margin-right: 0px;
-        margin-left: 0;
-        margin-top: 0;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
-  }
-
-   body::-webkit-scrollbar {
-   display: none; /* for Chrome, Safari, and Opera */
-   }
-
-    body {
-        text-align: left;
-        width: 100%;
-        background-color: #1d1d1d;
-    }
-    body h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        text-shadow: 0 1px 0 #999, 
-                0 2px 0 #999999,
-                0 3px 0 #888,
-                0 4px 0 #898989,
-                0 5px 0 #777,
-                0 6px 1px rgba(0,0,0,.2),
-                0 0 5px rgba(0,0,0,.2),
-                0 1px 3px rgba(0,0,0,.4),
-                0 3px 5px rgba(0,0,0,.3),
-                0 5px 10px rgba(0,0,0,.35),
-                0 10px 10px rgba(0,0,0,.3),
-                0 20px 20px rgba(0,0,0,.25);
-        width: 100%;
-        font-size: 60px;
-        text-align: center;
-        color: rgb(255, 255, 255);
-    }
-    .Favourites {
-        text-align: center;
-        padding-top: 345px;
-        width: 100%;
-        font-family: "Segoe UI", Tahoma, sans-serif;
-        align-items: center;
-        justify-content: space-between
-    }
-    .Buttons {
-        padding-top: 10px;
-        text-align: center;
-        width: 100%;
-        font-family: "Segoe UI", Tahoma, sans-serif;
-        align-items: center;
-        justify-content: space-between
-    }
-    .Stop_Button {
-        background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 75px, 75px;
-        cursor: pointer;
-        height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: none;
-        border-width: 2px;
-        border-style: outset;
-        border-color: white;
-        border-radius: 12px;
-        width: 90%;
-        padding: 10px;
-        background-color: rgb(168, 0, 0);
-    }
-    .Stop_Button:hover {
-        background-color: rgb(133, 1, 1);
-    }
-    .Button {
-        display: unset;
-        font-size: 20px;
-        width: 280px;
-        cursor: pointer;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: none;
-        padding: 25px;
-        border-radius: 12px;
-        font-family: "Segoe UI", Tahoma, sans-serif;
-        background-color: rgb(255, 248, 147);
-    }
-    .Button:hover {
-        background-color: rgb(255, 239, 93);
-    }
-
-    p {
-        vertical-align: top;
-    }
-
-    @media (max-width: 767px) {
-        .Button {
-            width: 200px;
-            font-size: 13px;
-        }
-    }
-
-    .Button + .Button { margin-top: 10px; }
-
-    #topbar {
-        align-items: center;
-        background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
-        background-position: top right;
-        background-size: cover;
-        border-width: 0px 0px 4px 0px;
-        border-style: inset;
-        border-color: rgb(255, 255, 255);
-        text-align: center;
-        margin-left: 0;
-        padding: 20px;
-        position: fixed;
-        width: 99%;
-        background-color: rgb(15, 15, 15);
-    }
-
-    input {
-        height: 40px;
-        margin-bottom: 10px;
-        width: 300px;
-        border-radius: 12px;
-    }
-
-#Random:hover {
-    opacity: 0.6;
-}
-
-.panic {
-    left: 10px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    margin-top: 400px;
-    bottom: 10px;
-}
-
-#texttospeech {
-    width: 300px;
-    transition: width 0.4s ease-in-out;
-}
-
-#texttospeech:focus {
-    width: 500px;
-}
-#Frequency {
-    width: 300px;
-    transition: width 0.4s ease-in-out;
-}
-#Frequency:focus {
-    width: 500px;
-}
-
-input {
-  transition: width 0.4s ease-in-out;
-}
-
-input:focus {
-  width: 500px;
-}
-
-.teae {
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    font-family: "Segoe UI", Tahoma, sans-serif;
-    align-items: center;
-    justify-content: space-between
-}
-    </style>
-    <body>
-        <span id="topbar">
-            <h1>Ultimate Soundboard</h1>
-            <ul class="teae">
-                <input id="searchbar" onkeyup="myFunction()" type="text"
-                name="search" placeholder="Search Sound Effects...">
-                <input id="texttospeech" onkeyup="tts()" type="text"
-                name="Tts" placeholder="Text to Speech...">
-                <input type="number" id="Frequency" name="Frequency"
-                min="20" max="20000" onkeyup="freq()" placeholder="Enter a Number from 20-20000...">
-            </ul>
-            <button onclick="Stop_all()" class="Stop_Button"></button>
-        </span>
-        <div class="Favourites">
-            <ul>
-            </ul>
-        </div>
-        <script>
-    function RandomSound() {
+<script>
+function RandomSound() {
     Stop_all()
     let elements = document.getElementsByTagName('audio');;
     let arrayOfElements = Array.from(elements);
@@ -217,7 +12,7 @@ function myFunction() {
 let input = document.getElementById('searchbar').value
 input=input.toLowerCase();
 let x = document.getElementsByClassName('Button');
-  
+
 for (i = 0; i < x.length; i++) { 
     if (!x[i].innerHTML.toLowerCase().includes(input)) {
         x[i].style.display="none";
@@ -270,21 +65,17 @@ function freq() {
           }
     }
 }
-function Stop_For_Tts(){
-    osc.stop(0);
-    var sounds = document.getElementsByTagName('audio');
-    for(i=0; i<sounds.length; i++) sounds[i].pause();
-    for(i=0; i<sounds.length; i++) sounds[i].currentTime=0;
-}
-function Stop_For_Freq(){
+function Stop_all(){
+    if (osc != null) {
+        osc.stop(0);
+        playing = false;
+    }
     speechSynthesis.cancel();
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].pause();
     for(i=0; i<sounds.length; i++) sounds[i].currentTime=0;
 }
-function Stop_all(){
-    osc.stop(0);
-    playing = false;
+function Stop_Sounds(){
     speechSynthesis.cancel();
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].pause();
@@ -650,7 +441,212 @@ function Talking_Ben_No() {
     document.getElementById('Talking_Ben_No').currentTime=0;
     document.getElementById('Talking_Ben_No').play();
 }
-        </script>
+</script>
+
+<html>
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/favicon2.png">
+    <head>
+        <title>Ultimate Soundboard</title>
+    <meta content="Ultimate Soundboard" property="og:title">
+    <meta content="UltimateSoundboard" property="og:site_name">
+    <meta content="The best Memesound site in Developement" property="og:description">
+    <meta content='https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/favicon2.png' property='og:image'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9250353244773023"
+        crossorigin="anonymous"></script>
+    </head>
+    <style>
+            body {
+        margin-right: 0px;
+        margin-left: 0;
+        margin-top: 0;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+  }
+
+   body::-webkit-scrollbar {
+   display: none; /* for Chrome, Safari, and Opera */
+   }
+
+    body {
+        text-align: left;
+        width: 100%;
+        background-color: #1d1d1d;
+    }
+    body h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 1px 0 #999, 
+                0 2px 0 #999999,
+                0 3px 0 #888,
+                0 4px 0 #898989,
+                0 5px 0 #777,
+                0 6px 1px rgba(0,0,0,.2),
+                0 0 5px rgba(0,0,0,.2),
+                0 1px 3px rgba(0,0,0,.4),
+                0 3px 5px rgba(0,0,0,.3),
+                0 5px 10px rgba(0,0,0,.35),
+                0 10px 10px rgba(0,0,0,.3),
+                0 20px 20px rgba(0,0,0,.25);
+        width: 100%;
+        font-size: 60px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    .Favourites {
+        text-align: center;
+        padding-top: 345px;
+        width: 100%;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        align-items: center;
+        justify-content: space-between
+    }
+    .Buttons {
+        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        align-items: center;
+        justify-content: space-between
+    }
+    .Stop_Button {
+        background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 75px, 75px;
+        cursor: pointer;
+        height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        border-width: 2px;
+        border-style: outset;
+        border-color: white;
+        border-radius: 12px;
+        width: 90%;
+        padding: 10px;
+        background-color: rgb(168, 0, 0);
+    }
+    .Stop_Button:hover {
+        background-color: rgb(133, 1, 1);
+    }
+    .Button {
+        display: unset;
+        font-size: 20px;
+        width: 280px;
+        cursor: pointer;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        padding: 25px;
+        border-radius: 12px;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background-color: rgb(255, 248, 147);
+    }
+    .Button:hover {
+        background-color: rgb(255, 239, 93);
+    }
+
+    p {
+        vertical-align: top;
+    }
+
+    @media (max-width: 767px) {
+        .Button {
+            width: 200px;
+            font-size: 13px;
+        }
+    }
+
+    .Button + .Button { margin-top: 10px; }
+
+    #topbar {
+        align-items: center;
+        background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
+        background-position: top right;
+        background-size: cover;
+        border-width: 0px 0px 4px 0px;
+        border-style: inset;
+        border-color: rgb(255, 255, 255);
+        text-align: center;
+        margin-left: 0;
+        padding: 20px;
+        position: fixed;
+        width: 99%;
+        background-color: rgb(15, 15, 15);
+    }
+
+    input {
+        height: 40px;
+        margin-bottom: 10px;
+        width: 300px;
+        border-radius: 12px;
+    }
+
+#Random:hover {
+    opacity: 0.6;
+}
+
+.panic {
+    left: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 400px;
+    bottom: 10px;
+}
+
+#texttospeech {
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+}
+
+#texttospeech:focus {
+    width: 500px;
+}
+#Frequency {
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+}
+#Frequency:focus {
+    width: 500px;
+}
+
+input {
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  width: 500px;
+}
+
+.teae {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-between
+}
+</style>
+    <body>
+        <span id="topbar">
+            <h1>Ultimate Soundboard</h1>
+            <ul class="teae">
+                <input id="searchbar" onkeyup="myFunction()" type="text"
+                name="search" placeholder="Search Sound Effects...">
+                <input id="texttospeech" onkeyup="tts()" type="text"
+                name="Tts" placeholder="Text to Speech...">
+                <input type="number" id="Frequency" name="Frequency"
+                min="20" max="20000" onkeyup="freq()" placeholder="Enter a Number from 20-20000...">
+            </ul>
+            <button onclick="Stop_all()" class="Stop_Button"></button>
+        </span>
+        <div class="Favourites">
+            <ul>
+            </ul>
+        </div>
         <div class="Buttons">
             <ul id="myUL">
                 <button id="Random" style="color: white; background-image: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 19%, rgba(255,248,0,1) 38%, rgba(0,255,8,1) 52%, rgba(0,168,255,1) 71%, rgba(191,94,225,1) 97%);;" class="Button" onclick="RandomSound()"><p>Random Sound</p></button>
