@@ -10,7 +10,7 @@
    <img src="https://github.com/geosjobby/Geosjobby.xyz/blob/main/pictures/CSS.png?raw=true" alt="CSS logo" style="height: 135px; width:145px;">
    <img src="https://github.com/geosjobby/Geosjobby.xyz/blob/main/pictures/Javascript.png?raw=true" alt="Javascript Logo" style="height: 150px; width:175px;">
    
-# How to Contribute
+# 💻How to Contribute
   *If you want to contribute to the other site! send a pull request with the added code, or send us an email with the audio file you want to add to the site!*
    ```
    contact@astrocore.net
@@ -20,22 +20,22 @@
   *Here is the source code!* 
    * [Download](https://github.com/astrocore-team/Ultimatesoundboard/archive/refs/heads/main.zip)
 
-# Creators
+# 👨‍💻Creators
   *The creators of Ultimatesoundboard are **Geosjobbydo** and **Figi8Cake**!* **|** *Figi8cake is the owner of [Astrocore](https://Astrocore.net)
 , A company for making digital media. and geosjobbydo is the Co-Owner for Astrocore*
 <p align='left'>
  <a target="_blank" href="https://geosjobby.xyz"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/geosjobbydo.png?raw=true" alt="Geosjobbydo's Site" style="height: 350px; width:375px;"><a target="_blank" href="https://figi8cake.xyz"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/Figi8Cake.png?raw=true" alt="Figi8Cake's Site" style="height: 350px; width:375px;"></p>
 
-# Discord
+# 🟪Discord
   *Come join the* **Discord** *if you need support or want to chat with the community!*
 <p align='left'>
  <a target="_blank" href="https://discord.gg/8aVJtkpk2j"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/discord-logo-png-7620.png?raw=true" alt="Discord Invite" style="height: 350px; width:375px;"></a></p>
     
-# Preview
+# 👁‍🗨Preview
 ***Coming soon***
 
 
-# License
+# © License
 *Copyright (c) Astrocore. All rights reserved.*
 
 *Licensed under the [CC](LICENSE) license.*

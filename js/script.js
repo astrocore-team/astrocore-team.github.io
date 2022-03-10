@@ -19,18 +19,18 @@ for (i = 0; i < x.length; i++) {
     }
 }
 }
+const speech = new SpeechSynthesisUtterance();
 function tts() {
     Stop_all()
     if(event.keyCode == 13) {
-      var msg = new SpeechSynthesisUtterance();
       let input = document.getElementById('texttospeech').value
-      msg.text = input;
+      speech.text = input;
       if (input == 'russia is better than ukraine' || input == 'Russia Is Better Than Ukraine' || input == 'Russia is better than Ukraine'){
           Talking_Ben_No()
           return
       }
       else {
-        window.speechSynthesis.speak(msg);
+        window.speechSynthesis.speak(speech);
       }
     }
 }
@@ -69,6 +69,7 @@ function Stop_Sounds(){
 }
 function Stop_all(){
     osc.stop(0);
+    speechSynthesis.cancel();
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].pause();
     for(i=0; i<sounds.length; i++) sounds[i].currentTime=0;
