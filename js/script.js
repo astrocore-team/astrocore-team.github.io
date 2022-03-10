@@ -20,6 +20,7 @@ for (i = 0; i < x.length; i++) {
 }
 }
 function tts() {
+    Stop_all()
     if(event.keyCode == 13) {
       var msg = new SpeechSynthesisUtterance();
       let input = document.getElementById('texttospeech').value
@@ -33,11 +34,45 @@ function tts() {
       }
     }
 }
-function Stop_all(){
+var osc = null;
+function freq() {
+    var context = null;
+    var usingWebAudio = true;
+    if (typeof AudioContext !== 'undefined') {
+        context = new AudioContext();
+    } else if (typeof webkitAudioContext !== 'undefined') {
+        context = new webkitAudioContext();
+    } else {
+        usingWebAudio = false;
+    }
+    var playing = false;
+    let freq = document.getElementById('Frequency').value;
+    if(event.keyCode == 13) {
+        if (playing == true) {
+            playing = false;
+            osc.stop(0);
+          }
+        else {
+            Stop_Sounds()
+            playing = true;
+            osc = context.createOscillator();
+            osc.connect(context.destination);
+            osc.frequency.value = freq;
+            osc.start(0);
+          }
+    }
+}
+function Stop_Sounds(){
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].pause();
     for(i=0; i<sounds.length; i++) sounds[i].currentTime=0;
-};
+}
+function Stop_all(){
+    osc.stop(0);
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) sounds[i].pause();
+    for(i=0; i<sounds.length; i++) sounds[i].currentTime=0;
+}
 function Moaning_Ear_Rape() {
     Stop_all()
     document.getElementById('Moaning').currentTime=0;

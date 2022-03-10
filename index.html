@@ -3,7 +3,6 @@
 <html>
     <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/favicon2.png">
     <head>
-        <link rel="stylesheet" href="css/stylesheet.css">
         <script src="js/script.js"></script>
         <title>Ultimate Soundboard</title>
     <meta content="Ultimate Soundboard" property="og:title">
@@ -164,6 +163,13 @@
 #texttospeech:focus {
     width: 500px;
 }
+#Frequency {
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+}
+#Frequency:focus {
+    width: 500px;
+}
 
 input {
   transition: width 0.4s ease-in-out;
@@ -190,6 +196,8 @@ input:focus {
                 name="search" placeholder="Search Sound Effects...">
                 <input id="texttospeech" onkeyup="tts()" type="text"
                 name="Tts" placeholder="Text to Speech...">
+                <input type="number" id="Frequency" name="Frequency"
+                min="20" max="20000" onkeyup="freq()" placeholder="Enter a Number from 20-20000...">
             </ul>
             <button onclick="Stop_all()" class="Stop_Button"></button>
         </span>
