@@ -491,6 +491,13 @@ function FuckHerRightInThePussy() {
     document.getElementById('FuckHerRightInThePussy').currentTime=0;
     document.getElementById('FuckHerRightInThePussy').play();
 }
+
+function sliderfunction() {
+    var slider = document.getElementById("myRange");
+    console.log("Hello world!");
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
+};
 </script>
 
 <html>
@@ -543,9 +550,28 @@ function FuckHerRightInThePussy() {
         text-align: center;
         color: rgb(255, 255, 255);
     }
+    body h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 0 1px 0 #999, 
+                0 2px 0 #999999,
+                0 3px 0 #888,
+                0 4px 0 #898989,
+                0 5px 0 #777,
+                0 6px 1px rgba(0,0,0,.2),
+                0 0 5px rgba(0,0,0,.2),
+                0 1px 3px rgba(0,0,0,.4),
+                0 3px 5px rgba(0,0,0,.3),
+                0 5px 10px rgba(0,0,0,.35),
+                0 10px 10px rgba(0,0,0,.3),
+                0 20px 20px rgba(0,0,0,.25);
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
     .Favourites {
         text-align: center;
-        padding-top: 345px;
+        padding-top: 410px;
         width: 100%;
         font-family: "Segoe UI", Tahoma, sans-serif;
         align-items: center;
@@ -685,6 +711,13 @@ input:focus {
     align-items: center;
     justify-content: space-between
 }
+.teae2 {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    align-items: center;
+}
 </style>
     <body>
         <span id="topbar">
@@ -696,6 +729,9 @@ input:focus {
                 name="Tts" placeholder="Text to Speech...">
                 <input type="number" id="Frequency" name="Frequency"
                 min="20" max="20000" onkeyup="freq()" placeholder="Frequancy generator enter a Number from 20-20000...">
+            </ul>
+            <ul class="teae2">
+                <input type="range" min="1" max="5" value="1" class="slider" onchange="sliderfunction()" id="myRange">
             </ul>
             <button onclick="Stop_all()" class="Stop_Button"></button>
         </span>
