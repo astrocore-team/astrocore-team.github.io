@@ -10,7 +10,6 @@
 
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
 <p align='left'>
-  c
    <img src="https://github.com/geosjobby/Geosjobby.xyz/blob/main/pictures/CSS.png?raw=true" alt="CSS logo" style="height: 135px; width:145px;">
    <img src="https://github.com/geosjobby/Geosjobby.xyz/blob/main/pictures/Javascript.png?raw=true" alt="Javascript Logo" style="height: 150px; width:175px;">
    
@@ -38,11 +37,10 @@
  <a target="_blank" href="https://discord.gg/8aVJtkpk2j"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/discord-logo-png-7620.png?raw=true" alt="Discord Invite" style="height: 350px; width:375px;"></a></p>
     
 # 👁‍🗨Preview
-*Here's the preview of the Site!*
+ <p align='left'
+    *Here's the preview of the Site!*</p>
  <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/preview.png?raw=true" alt="Preview" style="height: 150px; width:175px;">
  
-
-
 # © License
 *Copyright (c) Astrocore. All rights reserved.*
 
