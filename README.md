@@ -39,8 +39,7 @@
     
 # 👁‍🗨Preview
 *Here's the preview of the Site!*
- <p align='left'
- <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/New%20Tab%20-%20Google%20Chrome%2024_03_2022%2019_45_02.png?raw=true" alt="Preview" style="height: 150px; width:175px;"></p>
+ <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/preview.png?raw=true" alt="Preview" style="height: 150px; width:175px;">
  
 
 
