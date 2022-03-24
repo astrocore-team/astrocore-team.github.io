@@ -3,9 +3,10 @@
 
 ***A Work in progress Memesoundboard site🔊***
 * [💻How to Contribute](https://github.com/astrocore-team/Ultimatesoundboard/blob/main/README.md#how-to-contribute)
-* [Usage](#Usage)
-* [Settings](#Settings)
-* <hr width=100%>
+* [👨‍💻Creators](https://github.com/astrocore-team/Ultimatesoundboard#creators)
+* [🟪Discord](https://github.com/astrocore-team/Ultimatesoundboard#discord)
+* [©License](https://github.com/astrocore-team/Ultimatesoundboard#-license)
+ <hr width=100%>
 
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
 <p align='left'>
