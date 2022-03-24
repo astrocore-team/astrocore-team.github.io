@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <script>
+window.addEventListener("load", function(){
+    var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
+});
 function RandomSound() {
     Stop_all()
     let elements = document.getElementsByTagName('audio');;
@@ -494,7 +497,7 @@ function FuckHerRightInThePussy() {
 
 function sliderfunction() {
     var slider = document.getElementById("myRange");
-    console.log("Hello world!");
+    localStorage.setItem("speed", slider.value);
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
 };
