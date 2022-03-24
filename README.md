@@ -5,7 +5,6 @@
 * [How to Contribute](#💻How to Contribute)
 * [Usage](#Usage)
 * [Settings](#Settings)
-<hr width=100%>
 
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
 <p align='left'>
