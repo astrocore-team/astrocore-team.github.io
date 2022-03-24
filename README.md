@@ -37,9 +37,9 @@
  <a target="_blank" href="https://discord.gg/8aVJtkpk2j"><img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/discord-logo-png-7620.png?raw=true" alt="Discord Invite" style="height: 350px; width:375px;"></a></p>
     
 # 👁‍🗨Preview
- <p align='left'
-    *Here's the preview of the Site!*</p>
- <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/preview.png?raw=true" alt="Preview" style="height: 150px; width:175px;">
+   *Here's the preview of the Site!*
+ <p align='left'>
+ <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/preview.png?raw=true" alt="Preview" style="height: 250px; width:275px;"></p>
  
 # © License
 *Copyright (c) Astrocore. All rights reserved.*
