@@ -498,6 +498,42 @@ function sliderfunction() {
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
 };
+
+function YaLikeJazz() {
+    Stop_all()
+    document.getElementById('YaLikeJazz').currentTime=0;
+    document.getElementById('YaLikeJazz').play();
+}
+
+function OhYeahMrCrabs() {
+    Stop_all()
+    document.getElementById('OhYeahMrCrabs').currentTime=0;
+    document.getElementById('OhYeahMrCrabs').play();
+}
+
+function HeNeedsSomeMilk() {
+    Stop_all()
+    document.getElementById('HeNeedsSomeMilk').currentTime=0;
+    document.getElementById('HeNeedsSomeMilk').play();
+}
+
+function MylongestYeahBoi() {
+    Stop_all()
+    document.getElementById('MylongestYeahBoi').currentTime=0;
+    document.getElementById('MylongestYeahBoi').play();
+}
+
+function AreyouSureAboutThat() {
+    Stop_all()
+    document.getElementById('AreyouSureAboutThat').currentTime=0;
+    document.getElementById('AreyouSureAboutThat').play();
+}
+
+function MissionFailedSad() {
+    Stop_all()
+    document.getElementById('MissionFailedSad').currentTime=0;
+    document.getElementById('MissionFailedSad').play();
+}
 </script>
 
 <html>
@@ -718,6 +754,63 @@ input:focus {
     font-family: "Segoe UI", Tahoma, sans-serif;
     align-items: center;
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #2e0079;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
 </style>
     <body>
         <span id="topbar">
@@ -730,9 +823,19 @@ input:focus {
                 <input type="number" id="Frequency" name="Frequency"
                 min="20" max="20000" onkeyup="freq()" placeholder="Frequancy generator enter a Number from 20-20000...">
             </ul>
-            <ul class="teae2">
-                <input type="range" min="1" max="5" value="1" class="slider" onchange="sliderfunction()" id="myRange">
-            </ul>
+            <a style="float: left;" class="button" href="#settings"><img src="assets/640px-Windows_Settings_app_icon.png" width="50px", height="50px"></img></a>
+            <div id="settings" class="overlay">
+                <div class="popup">
+                    <h2>Settings</h2>
+                    <a class="close" href="/">&times;</a>
+                    <div class="content">
+                        <ul class="teae2">
+                            <h3>Speed:</h3>
+                            <input type="range" min="1" max="5" value="1" class="slider" onchange="sliderfunction()" id="myRange">
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <button onclick="Stop_all()" class="Stop_Button"></button>
         </span>
         <div class="Favourites">
@@ -823,6 +926,12 @@ input:focus {
                 <button class="Button" onclick="AnimeWOW()"><p>Anime WOW</p><audio id="AnimeWOW" src='sounds/anime-wow_UBX3JJM.mp3'></audio></button>
                 <button class="Button" onclick="AwHellNaw()"><p>ohh Hell nooo</p><audio id="AwHellNaw" src='sounds/AwHellNaw.mp3'></audio></button>
                 <button class="Button" onclick="FuckHerRightInThePussy()"><p>Fuck her in the pussy</p><audio id="FuckHerRightInThePussy" src='sounds/FuckHerRightInThePussy.mp3'></audio></button>
+                <button class="Button" onclick="YaLikeJazz()"><p>Ya like Jazz?</p><audio id="YaLikeJazz" src='sounds/ya-like-jazz.mp3'></audio></button>
+                <button class="Button" onclick="OhYeahMrCrabs()"><p>Oh Yeah Mr Crabs</p><audio id="OhYeahMrCrabs" src='sounds/mr-krabs.mp3'></audio></button>
+                <button class="Button" onclick="HeNeedsSomeMilk()"><p>He Needs Some Milk</p><audio id="HeNeedsSomeMilk" src='sounds/he-needs-some-milk-vine.mp3'></audio></button>
+                <button class="Button" onclick="MylongestYeahBoi()"><p>My Longest Yeah Boiiii</p><audio id="MylongestYeahBoi" src='sounds/mylongestyeahboyever.mp3'></audio></button>
+                <button class="Button" onclick="AreyouSureAboutThat()"><p>Are You Sure About That</p><audio id="AreyouSureAboutThat" src='sounds/are-you-sure-about-that.mp3'></audio></button>
+                <button class="Button" onclick="MissionFailedSad()"><p>Mission Failed [Sad]</p><audio id="MissionFailedSad" src='sounds/mission-failed-well-get-em-next-time_n5JntMK.mp3'></audio></button>
               </ul>
         </div>
         <a href="https://google.com" title="Panic Button To redirect you from this site" class="panic"><img src="assets/panic-btn.png" width="50px" height="50px"></img></a>
