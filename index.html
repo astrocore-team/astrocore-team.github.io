@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <script>
 window.addEventListener("load", function(){
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
@@ -499,12 +498,7 @@ function sliderfunction() {
     var slider = document.getElementById("myRange");
     localStorage.setItem("speed", slider.value);
     var sounds = document.getElementsByTagName('audio');
-    if (reverse == false) {
-        for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
-    }
-    else if (reverse == true) {
-        for(i=0; i<sounds.length; i++) sounds[i].playbackRate=(slider.value * -1)
-    }
+    for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
 };
 
 function YaLikeJazz() {
@@ -542,18 +536,12 @@ function MissionFailedSad() {
     document.getElementById('MissionFailedSad').currentTime=0;
     document.getElementById('MissionFailedSad').play();
 }
-var reverse = true
-function Reverse() {
-    document.getElementById('reverse')
-    if (reverse == false) {
-            reverse = true;
-            sliderfunction()
-          }
-    else if (reverse == true) {
-            reverse = false;
-            sliderfunction()
-          }
-}
+function volumefunction() {
+    var volume = document.getElementById("Volume");
+    localStorage.setItem("volume", volume.value/10);
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) sounds[i].volume=volume.value/10
+};
 </script>
 
 <html>
@@ -857,8 +845,8 @@ function Reverse() {
                         <ul class="teae2">
                             <h3>Speed:</h3>
                             <input type="range" min="1" max="5" value="1" class="slider" onchange="sliderfunction()" id="myRange">
-                            <h3>Reversed?</h3>
-                            <input type="checkbox" id="reverse" name="Reversed" onchange="Reverse()" value="true">
+                            <h3>Volume:</h3>
+                            <input type="range" min="1" max="10" value="10" class="slider" onchange="volumefunction()" id="Volume">
                         </ul>
                     </div>
                 </div>
