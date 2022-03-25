@@ -542,6 +542,21 @@ function volumefunction() {
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].volume=volume.value/10
 };
+function Fart2() {
+    Stop_all()
+    document.getElementById('Fart2').currentTime=0;
+    document.getElementById('Fart2').play();
+}
+function WetFart() {
+    Stop_all()
+    document.getElementById('WetFart').currentTime=0;
+    document.getElementById('WetFart').play();
+}
+function DryFart() {
+    Stop_all()
+    document.getElementById('DryFart').currentTime=0;
+    document.getElementById('DryFart').play();
+}
 </script>
 
 <html>
@@ -885,6 +900,9 @@ function volumefunction() {
                 <button class="Button" onclick="Bruh()"><p>BRUH</p><audio id="Bruh" src='sounds/movie_1.mp3'></audio></button>
                 <button class="Button" onclick="Ohnono()"><p>Oh no no no Laugh</p><audio id="Ohnono" src='sounds/oh-no-no-no-no-laugh.mp3'></audio></button>
                 <button class="Button" onclick="Fart()"><p>Fart</p><audio id="Fart" src='sounds/perfect-fart.mp3'></audio></button>
+                <button class="Button" onclick="Fart2()"><p>Fart2</p><audio id="Fart2" src='sounds/fart_1.mp3'></audio></button>
+                <button class="Button" onclick="WetFart()"><p>Wet Fart</p><audio id="WetFart" src='sounds/wet-fart_1.mp3'></audio></button>
+                <button class="Button" onclick="DryFart()"><p>Dry Fart</p><audio id="DryFart" src='sounds/dry-fart.mp3'></audio></button>
                 <button class="Button" onclick="ReverbFart()"><p>Fart [Reverb]</p><audio id="ReverbFart" src='sounds/fart-with-reverb.mp3'></audio></button>
                 <button class="Button" onclick="Community()"><p>Pornhub Intro</p><audio id="Community" src='sounds/pornhub-community-intro.mp3'></audio></button>
                 <button class="Button" onclick="WindowsXpShutdown()"><p>Windows XP Shutdown</p><audio id="WindowsXpShutdown" src='sounds/preview_4.mp3'></audio></button>
