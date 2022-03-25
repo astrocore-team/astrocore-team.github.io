@@ -577,6 +577,11 @@ function NokiaRingtoneEarRape() {
     document.getElementById('NokiaRingtoneEarRape').currentTime=0;
     document.getElementById('NokiaRingtoneEarRape').play();
 }
+function NokiaStartup() {
+    Stop_all()
+    document.getElementById('NokiaStartup').currentTime=0;
+    document.getElementById('NokiaStartup').play();
+}
 </script>
 
 <html>
@@ -986,6 +991,7 @@ function NokiaRingtoneEarRape() {
                 <button class="Button" onclick="SnapchatCall()"><p>Snapchat Call</p><audio id="SnapchatCall" loop src='sounds/snapchat_call.mp3'></audio></button>
                 <button class="Button" onclick="NokiaRingtone()"><p>Nokia Ringtone</p><audio loop id="NokiaRingtone" src='sounds/nokia-ringtone-1994.mp3'></audio></button>
                 <button class="Button" onclick="NokiaRingtoneEarRape()"><p>Nokia Ringtone [EarRape]</p><audio loop id="NokiaRingtoneEarRape" src='sounds/nokia_2qH81Eb.mp3'></audio></button>
+                <button class="Button" onclick="NokiaStartup()"><p>Nokia Startup</p><audio id="NokiaStartup" src='sounds/nokia_startup.mp3'></audio></button>
               </ul>
         </div>
         <a href="https://google.com" title="Panic Button To redirect you from this site" class="panic"><img src="assets/panic-btn.png" width="50px" height="50px"></img></a>
