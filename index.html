@@ -861,6 +861,16 @@ function NokiaStartup() {
     width: 70%;
   }
 }
+.settingsbutton {
+    float: left;
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.png);
+    padding: 25px;
+    background-size: 50px;
+    transition: all 0.25s ease-in-out;
+}
+.settingsbutton:hover {
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/640px-Windows_Settings_app_icon.png);
+}
 </style>
     <body>
         <span id="topbar">
@@ -873,7 +883,7 @@ function NokiaStartup() {
                 <input class="wide" type="number" id="Frequency" name="Frequency"
                 min="20" max="20000" onkeyup="freq()" placeholder="Frequancy generator enter a Number from 20-20000...">
             </ul>
-            <a style="float: left; background-image: url();" class="button" href="#settings"></a>
+            <a class="settingsbutton" href="#settings"></a>
             <div id="settings" class="overlay">
                 <div class="popup">
                     <h2>Settings</h2>
