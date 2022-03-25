@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <link id="theme" rel="stylesheet" 
-type="text/css" href="dark.css" />
+type="text/css" href="themes/dark.css" />
 <script>
 window.addEventListener("load", function(){
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
 });
 function toggleTheme() {
             var theme = document.getElementsByTagName('link')[0];
-            if (theme.getAttribute('href') == 'light.css') {
-                theme.setAttribute('href', 'dark.css');
+            if (theme.getAttribute('href') == 'themes/light.css') {
+                theme.setAttribute('href', 'themes/dark.css');
             } else {
-                theme.setAttribute('href', 'light.css');
+                theme.setAttribute('href', 'themes/light.css');
             }
         }
 function RandomSound() {
