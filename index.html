@@ -499,7 +499,12 @@ function sliderfunction() {
     var slider = document.getElementById("myRange");
     localStorage.setItem("speed", slider.value);
     var sounds = document.getElementsByTagName('audio');
-    for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
+    if (reverse == false) {
+        for(i=0; i<sounds.length; i++) sounds[i].playbackRate=slider.value
+    }
+    else if (reverse == true) {
+        for(i=0; i<sounds.length; i++) sounds[i].playbackRate=(slider.value * -1)
+    }
 };
 
 function YaLikeJazz() {
@@ -536,6 +541,18 @@ function MissionFailedSad() {
     Stop_all()
     document.getElementById('MissionFailedSad').currentTime=0;
     document.getElementById('MissionFailedSad').play();
+}
+var reverse = true
+function Reverse() {
+    document.getElementById('reverse')
+    if (reverse == false) {
+            reverse = true;
+            sliderfunction()
+          }
+    else if (reverse == true) {
+            reverse = false;
+            sliderfunction()
+          }
 }
 </script>
 
@@ -734,11 +751,11 @@ function MissionFailedSad() {
     width: 500px;
 }
 
-input {
+.wide {
   transition: width 0.4s ease-in-out;
 }
 
-input:focus {
+.wide:focus {
   width: 500px;
 }
 
@@ -824,11 +841,11 @@ input:focus {
         <span id="topbar">
             <h1>Ultimate Soundboard</h1>
             <ul class="teae">
-                <input id="searchbar" onkeyup="myFunction()" type="text"
+                <input class="wide" id="searchbar" onkeyup="myFunction()" type="text"
                 name="search" placeholder="Search Sound Effects...">
-                <input id="texttospeech" onkeyup="tts()" type="text"
+                <input class="wide" id="texttospeech" onkeyup="tts()" type="text"
                 name="Tts" placeholder="Text to Speech...">
-                <input type="number" id="Frequency" name="Frequency"
+                <input class="wide" type="number" id="Frequency" name="Frequency"
                 min="20" max="20000" onkeyup="freq()" placeholder="Frequancy generator enter a Number from 20-20000...">
             </ul>
             <a style="float: left;" class="button" href="#settings"><img src="assets/640px-Windows_Settings_app_icon.png" width="50px", height="50px"></img></a>
@@ -840,6 +857,8 @@ input:focus {
                         <ul class="teae2">
                             <h3>Speed:</h3>
                             <input type="range" min="1" max="5" value="1" class="slider" onchange="sliderfunction()" id="myRange">
+                            <h3>Reversed?</h3>
+                            <input type="checkbox" id="reverse" name="Reversed" onchange="Reverse()" value="true">
                         </ul>
                     </div>
                 </div>
