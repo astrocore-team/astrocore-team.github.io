@@ -1,1 +1,280 @@
+body {
+    margin-right: 0px;
+    margin-left: 0;
+    margin-top: 0;
+-ms-overflow-style: none; /* for Internet Explorer, Edge */
+scrollbar-width: none; /* for Firefox */
+overflow-y: scroll; 
+}
 
+body::-webkit-scrollbar {
+display: none; /* for Chrome, Safari, and Opera */
+}
+
+body {
+    text-align: left;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+body h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 0 #999, 
+            0 2px 0 #999999,
+            0 3px 0 #888,
+            0 4px 0 #898989,
+            0 5px 0 #777,
+            0 6px 1px rgba(0,0,0,.2),
+            0 0 5px rgba(0,0,0,.2),
+            0 1px 3px rgba(0,0,0,.4),
+            0 3px 5px rgba(0,0,0,.3),
+            0 5px 10px rgba(0,0,0,.35),
+            0 10px 10px rgba(0,0,0,.3),
+            0 20px 20px rgba(0,0,0,.25);
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 1px 0 #999, 
+            0 2px 0 #999999,
+            0 3px 0 #888,
+            0 4px 0 #898989,
+            0 5px 0 #777,
+            0 6px 1px rgba(0,0,0,.2),
+            0 0 5px rgba(0,0,0,.2),
+            0 1px 3px rgba(0,0,0,.4),
+            0 3px 5px rgba(0,0,0,.3),
+            0 5px 10px rgba(0,0,0,.35),
+            0 10px 10px rgba(0,0,0,.3),
+            0 20px 20px rgba(0,0,0,.25);
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.Favourites {
+    text-align: center;
+    padding-top: 310px;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-between
+}
+.Buttons {
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-between
+}
+.Stop_Button {
+    background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75px, 75px;
+    cursor: pointer;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-width: 2px;
+    border-style: outset;
+    border-color: white;
+    border-radius: 12px;
+    width: 90%;
+    padding: 10px;
+    background-color: rgb(168, 0, 0);
+}
+.Stop_Button:hover {
+    background-color: rgb(133, 1, 1);
+}
+.Button {
+    display: unset;
+    font-size: 20px;
+    width: 280px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    padding: 25px;
+    border-radius: 12px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: rgb(255, 248, 147);
+}
+.Button:hover {
+    border-style: groove;
+    border-width: 3px;
+    padding: 22px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-color: white;
+    background-color: rgb(255, 239, 93);
+}
+
+p {
+    vertical-align: top;
+}
+
+@media (max-width: 767px) {
+    .Button {
+        width: 200px;
+        font-size: 13px;
+    }
+}
+
+.Button + .Button { margin-top: 10px; }
+
+#topbar {
+    align-items: center;
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
+    background-position: top right;
+    background-size: cover;
+    border-width: 0px 0px 4px 0px;
+    border-style: inset;
+    border-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 0;
+    padding: 20px;
+    position: fixed;
+    width: 99%;
+    background-color: rgb(15, 15, 15);
+}
+
+input {
+    height: 40px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 12px;
+}
+
+#Random:hover {
+opacity: 0.6;
+}
+
+.panic {
+left: 10px;
+background: transparent;
+border: none;
+cursor: pointer;
+position: fixed;
+margin-top: 400px;
+bottom: 10px;
+}
+
+#texttospeech {
+width: 300px;
+transition: width 0.4s ease-in-out;
+}
+
+#texttospeech:focus {
+width: 500px;
+}
+#Frequency {
+width: 300px;
+transition: width 0.4s ease-in-out;
+}
+#Frequency:focus {
+width: 500px;
+}
+
+.wide {
+transition: width 0.4s ease-in-out;
+}
+
+.wide:focus {
+width: 500px;
+}
+
+.teae {
+padding: 0;
+text-align: center;
+width: 100%;
+font-family: "Segoe UI", Tahoma, sans-serif;
+align-items: center;
+justify-content: space-between
+}
+.teae2 {
+padding: 0;
+text-align: center;
+width: 100%;
+font-family: "Segoe UI", Tahoma, sans-serif;
+align-items: center;
+}
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.7);
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 0;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+margin: 70px auto;
+padding: 20px;
+background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
+border-radius: 5px;
+width: 30%;
+position: relative;
+transition: 5s ease-in;
+}
+
+.popup h2 {
+margin-top: 0;
+color: rgb(255, 255, 255);
+font-family: Tahoma, Arial, sans-serif;
+}
+.popup h3 {
+margin-top: 0;
+color: rgb(255, 255, 255);
+font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+position: absolute;
+top: 20px;
+right: 30px;
+transition: all 200ms;
+font-size: 30px;
+font-weight: bold;
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+.popup .close:hover {
+color: #868686;
+}
+.popup .content {
+max-height: 30%;
+overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+.box{
+width: 70%;
+}
+.popup{
+width: 70%;
+}
+}
+.settingsbutton {
+float: left;
+background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.png);
+padding: 25px;
+background-size: 50px;
+transition: all 0.25s ease-in-out;
+}
+.settingsbutton:hover {
+background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/640px-Windows_Settings_app_icon.png);
+}
+#toggle {
+    background-color: white;
+}
