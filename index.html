@@ -592,6 +592,11 @@ function NokiaStartup() {
     document.getElementById('NokiaStartup').currentTime=0;
     document.getElementById('NokiaStartup').play();
 }
+function JamesMoan() {
+    Stop_all()
+    document.getElementById('JamesMoan').currentTime=0;
+    document.getElementById('JamesMoan').play();
+}
 </script>
 
 <html>
@@ -640,6 +645,7 @@ function NokiaStartup() {
             <ul id="myUL">
                 <button id="Random" style="color: white; background-image: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 19%, rgba(255,248,0,1) 38%, rgba(0,255,8,1) 52%, rgba(0,168,255,1) 71%, rgba(191,94,225,1) 97%);;" class="Button" onclick="RandomSound()"><p>Random Sound</p></button>
                 <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio loop id="Moaning" src='sounds/MoaningEarrape.mp3'></audio></button>
+                <button class="Button" onclick="JamesMoan()"><p>James Moan</p><audio id="JamesMoan" src='sounds/jamesmoan.mp3'></audio></button>
                 <button class="Button" onclick="Talking_Ben_Laugh()"><p>Talking Ben Laugh</p><audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
                 <button class="Button" onclick="Talking_Ben_Ben()"><p>Talking Ben Saying Ben</p><audio id="Talking_Ben_Ben" src='sounds/talking-ben-saying-ben.mp3'></audio></button>
                 <button class="Button" onclick="Talking_Ben_Yes()"><p>Talking Ben Yes</p><audio id="Talking_Ben_Yes" src='sounds/talking-benn-yes.mp3'></audio></button>
