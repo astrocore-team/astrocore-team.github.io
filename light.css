@@ -231,12 +231,12 @@ transition: all 5s ease-in-out;
 
 .popup h2 {
 margin-top: 0;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 font-family: Tahoma, Arial, sans-serif;
 }
 .popup h3 {
 margin-top: 0;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 font-family: Tahoma, Arial, sans-serif;
 }
 .popup .close {
@@ -274,4 +274,8 @@ transition: all 0.25s ease-in-out;
 }
 .settingsbutton:hover {
 background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.png);
+}
+#toggle {
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
