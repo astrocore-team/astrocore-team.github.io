@@ -226,7 +226,7 @@ background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimates
 border-radius: 5px;
 width: 30%;
 position: relative;
-transition: 5s ease-in;
+transition: 0.1s ease-in;
 }
 
 .popup h2 {
