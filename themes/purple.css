@@ -140,7 +140,7 @@ p {
     padding: 20px;
     position: fixed;
     width: 99%;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(54, 0, 43);
 }
 
 input {
@@ -227,6 +227,7 @@ border-radius: 5px;
 width: 30%;
 position: relative;
 transition: 0.1s ease-in;
+background-color: rgb(54, 0, 43);
 }
 
 .popup h2 {

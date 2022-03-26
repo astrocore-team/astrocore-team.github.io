@@ -223,6 +223,7 @@ opacity: 1;
 margin: 70px auto;
 padding: 20px;
 background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/whitebackground.png);
+background-color: rgb(221, 221, 221);
 border-radius: 5px;
 width: 30%;
 position: relative;

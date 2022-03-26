@@ -227,6 +227,7 @@ border-radius: 5px;
 width: 30%;
 position: relative;
 transition: 0.1s ease-in;
+background-color: rgb(109, 0, 0);
 }
 
 .popup h2 {
@@ -298,7 +299,7 @@ animation-timing-function: linear;
     border: none;
     cursor: pointer;
   }
-  
+
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
     background-color: #2980B9;
