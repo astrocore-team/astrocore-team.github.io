@@ -5,14 +5,12 @@ type="text/css" href="themes/dark.css" />
 window.addEventListener("load", function(){
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
 });
-function toggleTheme() {
-            var theme = document.getElementsByTagName('link')[0];
-            if (theme.getAttribute('href') == 'themes/light.css') {
-                theme.setAttribute('href', 'themes/dark.css');
-            } else {
-                theme.setAttribute('href', 'themes/light.css');
-            }
-        }
+function toggleTheme(value) {
+  var sheets = document
+      .getElementsByTagName('link');
+
+  sheets[0].href = value;
+}
 function RandomSound() {
     Stop_all()
     let elements = document.getElementsByTagName('audio');;
@@ -597,6 +595,23 @@ function JamesMoan() {
     document.getElementById('JamesMoan').currentTime=0;
     document.getElementById('JamesMoan').play();
 }
+function dropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
 
 <html>
@@ -631,7 +646,17 @@ function JamesMoan() {
                             <h3>Volume:</h3>
                             <input type="range" min="1" max="10" value="10" class="slider" onchange="volumefunction()" id="Volume">
                         </ul>
-                            <button class="Button" id="toggle" onclick="toggleTheme()"><p>Toggle Light/Dark Theme Mode</p></audio></button>
+                        <div class="dropdown">
+                            <button onclick="dropdown()" class="dropbtn">Themes</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button onclick="toggleTheme('themes/light.css')">
+                                    Light
+                                </button>
+                                <button onclick="toggleTheme('themes/dark.css')">
+                                    Dark
+                                </button>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </div>
