@@ -273,6 +273,18 @@ transition: all 0.25s ease-in-out;
 }
 .settingsbutton:hover {
 background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.png);
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 #toggle {
     color: white;

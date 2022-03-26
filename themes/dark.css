@@ -271,8 +271,20 @@ padding: 25px;
 background-size: 50px;
 transition: all 0.25s ease-in-out;
 }
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 .settingsbutton:hover {
 background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/640px-Windows_Settings_app_icon.png);
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
 }
 #toggle {
     background-color: white;
