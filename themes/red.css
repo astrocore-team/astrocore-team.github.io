@@ -14,7 +14,7 @@ display: none; /* for Chrome, Safari, and Opera */
 body {
     text-align: left;
     width: 100%;
-    background-color: #ff2c2c;
+    background-color: #ff7373;
 }
 body h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -140,7 +140,7 @@ p {
     padding: 20px;
     position: fixed;
     width: 99%;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(109, 0, 0);
 }
 
 input {
