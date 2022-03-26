@@ -2,7 +2,7 @@
 <link id="theme" rel="stylesheet" 
 type="text/css" href="themes/dark.css" />
 <script>
-window.addEventListener("load", function(){
+document.addEventListener("DOMContentLoaded", function(){
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
     var themeslider = document.getElementById('theme').href = localStorage.getItem("theme");
 });
