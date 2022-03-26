@@ -318,7 +318,7 @@ animation-timing-function: linear;
     display: none;
     position: absolute;
     background-color: #414141;
-    min-width: 160px;
+    min-width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 5px;
@@ -331,6 +331,8 @@ animation-timing-function: linear;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    width: 100px;
+    height: 40px;
   }
   @keyframes growDown {
     0% {
