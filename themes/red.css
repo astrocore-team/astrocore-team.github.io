@@ -37,11 +37,11 @@ body h1 {
 }
 body h2 {
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 1px 0 #999, 
-            0 2px 0 #999999,
-            0 3px 0 #888,
-            0 4px 0 #898989,
-            0 5px 0 #777,
+    text-shadow: 0 1px 0 rgb(252, 26, 26), 
+            0 2px 0 #f11c1c,
+            0 3px 0 rgb(230, 51, 51),
+            0 4px 0 #e92727,
+            0 5px 0 rgb(219, 39, 39),
             0 6px 1px rgba(0,0,0,.2),
             0 0 5px rgba(0,0,0,.2),
             0 1px 3px rgba(0,0,0,.4),
