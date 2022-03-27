@@ -604,6 +604,11 @@ function Justin() {
     document.getElementById('Justin').currentTime=0;
     document.getElementById('Justin').play();
 }
+function Postman() {
+    Stop_all()
+    document.getElementById('Postman').currentTime=0;
+    document.getElementById('Postman').play();
+}
 function dropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -783,6 +788,7 @@ window.onclick = function(event) {
                 <button class="Button" onclick="NokiaRingtone()"><p>Nokia Ringtone</p><audio loop id="NokiaRingtone" src='sounds/nokia-ringtone-1994.mp3'></audio></button>
                 <button class="Button" onclick="NokiaRingtoneEarRape()"><p>Nokia Ringtone [EarRape]</p><audio loop id="NokiaRingtoneEarRape" src='sounds/nokia_2qH81Eb.mp3'></audio></button>
                 <button class="Button" onclick="NokiaStartup()"><p>Nokia Startup</p><audio id="NokiaStartup" src='sounds/nokia_startup.mp3'></audio></button>
+                <button class="Button" onclick="Postman()"><p>Mr.Postman</p><audio id="Postman" src='sounds/Mrpostman.mp3'></audio></button>
               </ul>
         </div>
         <a href="https://google.com" title="Panic Button To redirect you from this site" class="panic"><img src="assets/panic-btn.png" width="50px" height="50px"></img></a>
