@@ -6,7 +6,12 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
-
+#searchbar {
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/av6584c34aabb39f00a10.png);
+    background-size: contain;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
 ::-webkit-scrollbar-track {
     background-color: #1d1d1d;
 }
