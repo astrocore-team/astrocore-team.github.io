@@ -125,6 +125,12 @@ p {
     }
 }
 
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
 .Button + .Button { margin-top: 10px; }
 
 #topbar {
@@ -206,6 +212,11 @@ width: 100%;
 font-family: "Segoe UI", Tahoma, sans-serif;
 align-items: center;
 }
+.settings .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
 .overlay {
 position: fixed;
 top: 0;
