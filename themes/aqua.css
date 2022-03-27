@@ -14,16 +14,16 @@ display: none; /* for Chrome, Safari, and Opera */
 body {
     text-align: left;
     width: 100%;
-    background-color: #8effff;
+    background-color: #3f8f8f;
 }
 body h1 {
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 1px 0 #999, 
-            0 2px 0 #999999,
-            0 3px 0 #888,
-            0 4px 0 #898989,
-            0 5px 0 #777,
-            0 6px 1px rgba(0,0,0,.2),
+    text-shadow: 0 1px 0 rgb(85, 184, 197), 
+            0 2px 0 #3fb9c2,
+            0 3px 0 rgb(43, 146, 160),
+            0 4px 0 #176f7a,
+            0 5px 0 rgb(20, 88, 97),
+            0 6px 1px rgb(7, 59, 61),
             0 0 5px rgba(0,0,0,.2),
             0 1px 3px rgba(0,0,0,.4),
             0 3px 5px rgba(0,0,0,.3),
@@ -37,12 +37,12 @@ body h1 {
 }
 body h2 {
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 1px 0 #999, 
-            0 2px 0 #999999,
-            0 3px 0 #888,
-            0 4px 0 #898989,
-            0 5px 0 #777,
-            0 6px 1px rgba(0,0,0,.2),
+    text-shadow: 0 1px 0 rgb(85, 184, 197), 
+            0 2px 0 #3fb9c2,
+            0 3px 0 rgb(43, 146, 160),
+            0 4px 0 #176f7a,
+            0 5px 0 rgb(20, 88, 97),
+            0 6px 1px rgb(7, 59, 61),
             0 0 5px rgba(0,0,0,.2),
             0 1px 3px rgba(0,0,0,.4),
             0 3px 5px rgba(0,0,0,.3),
@@ -129,7 +129,7 @@ p {
 
 #topbar {
     align-items: center;
-    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/aquabackground.png);
     background-position: top right;
     background-size: cover;
     border-width: 0px 0px 4px 0px;
@@ -140,7 +140,7 @@ p {
     padding: 20px;
     position: fixed;
     width: 99%;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(32, 117, 143);
 }
 
 input {
@@ -149,9 +149,11 @@ input {
     width: 300px;
     border-radius: 12px;
 }
-
+#Random {
+    background-image: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(255,162,0,1) 19%, rgba(255,248,0,1) 38%, rgba(0,255,8,1) 52%, rgba(0,168,255,1) 71%, rgba(191,94,225,1) 97%);
+}
 #Random:hover {
-opacity: 0.6;
+    background-image: linear-gradient(135deg, rgb(179, 0, 0) 0%, rgb(185, 117, 0) 19%, rgb(177, 171, 0) 38%, rgb(0, 161, 5) 52%, rgb(0, 97, 146) 71%, rgb(116, 38, 145) 97%);
 }
 
 .panic {
@@ -222,8 +224,8 @@ opacity: 1;
 .popup {
 margin: 70px auto;
 padding: 20px;
-background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
-background-color: rgb(15, 15, 15);
+background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/aquabackground.png);
+background-color: rgb(32, 117, 143);
 border-radius: 5px;
 width: 30%;
 position: relative;
@@ -317,7 +319,7 @@ animation-timing-function: linear;
     transform-origin: top center;
     display: none;
     position: absolute;
-    background-color: #414141;
+    background-color: rgb(32, 117, 143);
     min-width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
