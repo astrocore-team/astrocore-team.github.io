@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function(){
     if (theme != null) {
         var themeslider = document.getElementById('theme').href = localStorage.getItem("theme");
     }
+    var checbox = localStorage.getItem("keepplaying");
+    if (checbox != null) {
+        if (checbox == "#") {
+            var checckbox = document.getElementById("close").href = "#"
+            var checckbox = document.getElementById("SoundPlay").checked = true;
+            keepplaying = true
+        }
+        else if (checbox == "/") {
+            var checckbox = document.getElementById("close").href = "/"
+            var checckbox = document.getElementById("SoundPlay").checked = false;
+            keepplaying = false
+        }
+    }
 });
 function toggleTheme(value) {
   var sheets = document.getElementsByTagName('link');
@@ -628,6 +641,19 @@ window.onclick = function(event) {
     }
   }
 }
+var keepplaying = false
+function SoundPlay() {
+    if (keepplaying == false) {
+        var checckbox = document.getElementById("close").href = "#"
+        localStorage.setItem("keepplaying", "#");
+        keepplaying = true
+    }
+    else if (keepplaying == true) {
+        var checckbox = document.getElementById("close").href = "/"
+        localStorage.setItem("keepplaying", "/");
+        keepplaying = false
+    }
+}
 </script>
 
 <html>
@@ -654,13 +680,15 @@ window.onclick = function(event) {
             <div id="settings" class="overlay">
                 <div class="popup">
                     <h2>Settings</h2>
-                    <a class="close" href="/">&times;</a>
+                    <a id="close" class="close" href="/">&times;</a>
                     <div class="content">
                         <ul class="teae2">
                             <h3>Speed:</h3>
                             <input type="range" min="1" max="5" value="1" class="slider" onchange="sliderfunction()" id="myRange">
                             <h3>Volume:</h3>
                             <input type="range" min="1" max="10" value="10" class="slider" onchange="volumefunction()" id="Volume">
+                            <h3>Keep Playing Sound After Settings Close?:</h3>
+                            <input type="checkbox" id="SoundPlay" name="SoundPlay" onchange="SoundPlay()">
                         </ul>
                         <div class="dropdown">
                             <button onclick="dropdown()" class="dropbtn">Themes</button>
