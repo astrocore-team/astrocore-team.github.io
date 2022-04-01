@@ -143,6 +143,13 @@ p {
         width: 200px;
         font-size: 13px;
     }
+    .wide:focus {
+        width: 300px;
+    }
+    #Frequency:focus {
+        width: 300px;
+        }
+        
 }
 
 .popup .show {
