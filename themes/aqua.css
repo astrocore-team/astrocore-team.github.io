@@ -33,6 +33,21 @@ body {
     background-position: 100%;
     background-repeat: no-repeat;
 }
+
+@media (max-width: 767px) {
+    .Button {
+        width: 200px;
+        font-size: 13px;
+    }
+    .wide:focus {
+        width: 300px;
+    }
+    #Frequency:focus {
+        width: 300px;
+        }
+        
+}
+
 body {
     text-align: left;
     width: 100%;

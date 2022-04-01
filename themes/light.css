@@ -362,7 +362,21 @@ animation-timing-function: linear;
         transform: scaleY(1)
     }
 }
-  
+
+@media (max-width: 767px) {
+    .Button {
+        width: 200px;
+        font-size: 13px;
+    }
+    .wide:focus {
+        width: 300px;
+    }
+    #Frequency:focus {
+        width: 300px;
+        }
+        
+}
+
   /* Links inside the dropdown */
   .dropdown-content button {
     color: black;
