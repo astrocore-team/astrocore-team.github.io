@@ -126,10 +126,6 @@ body h2 {
 }
 .Button:hover {
     border-style: groove;
-    border-width: 3px;
-    padding: 22px;
-    padding-left: 7px;
-    padding-right: 7px;
     border-color: white;
     background-color: rgb(255, 239, 93);
 }
@@ -139,9 +135,17 @@ p {
 }
 
 @media (max-width: 767px) {
+    body {
+        text-align: left;
+    }
+    .Favourites {
+        padding-top: 450px;
+    }
+
     .Button {
+        padding: 35px;
         width: 200px;
-        font-size: 13px;
+        font-size: 16px;
     }
     .wide {
         width: 500px;
@@ -149,7 +153,6 @@ p {
     #Frequency {
         width: 500px;
         }
-        
 }
 
 .popup .show {
