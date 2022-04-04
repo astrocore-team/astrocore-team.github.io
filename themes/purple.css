@@ -140,7 +140,7 @@ body h2 {
     padding: 25px;
     border-radius: 12px;
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background-color: rgb(255, 248, 147);
+    background-color: rgb(124, 240, 255);
 }
 .Button:hover {
     border-style: groove;
@@ -149,7 +149,7 @@ body h2 {
     padding-left: 7px;
     padding-right: 7px;
     border-color: white;
-    background-color: rgb(255, 239, 93);
+    background-color: rgb(55, 206, 233);
 }
 
 p {
