@@ -664,6 +664,10 @@ function Aroundtheworld2() {
     document.getElementById('Aroundtheworld2').currentTime=0;
     document.getElementById('Aroundtheworld2').play();
 }
+function AllSounds(){
+    var sounds = document.getElementsByTagName('audio');
+    for(i=0; i<sounds.length; i++) sounds[i].play();
+}
 </script>
 
 <html>
@@ -731,6 +735,7 @@ function Aroundtheworld2() {
         <div class="Buttons">
             <ul id="myUL">
                 <button id="Random" style="color: white;" class="Button" onclick="RandomSound()"><p>Random Sound</p></button>
+                <button style="color: white; background: rgb(251,220,63); background: radial-gradient(circle, rgba(251,220,63,1) 0%, rgba(252,140,70,1) 100%);" class="Button" id="AllSounds" onclick="AllSounds()"><p>Ultimate Sound</p></button>
                 <button class="Button" onclick="Moaning_Ear_Rape()"><p>Moaning [Ear Rape]</p><audio loop id="Moaning" src='sounds/MoaningEarrape.mp3'></audio></button>
                 <button class="Button" onclick="JamesMoan()"><p>James Moan</p><audio id="JamesMoan" src='sounds/jamesmoan.mp3'></audio></button>
                 <button class="Button" onclick="Talking_Ben_Laugh()"><p>Talking Ben Laugh</p><audio id="BenLaugh" src='sounds/talking-ben-laugh.mp3'></audio></button>
