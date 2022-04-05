@@ -123,32 +123,6 @@ function volumefunction() {
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].volume=volume.value/10
 };
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-var keepplaying = false
-function SoundPlay() {
-    if (keepplaying == false) {
-        var checckbox = document.getElementById("close").href = "#"
-        localStorage.setItem("keepplaying", "#");
-        keepplaying = true
-    }
-    else if (keepplaying == true) {
-        var checckbox = document.getElementById("close").href = "/"
-        localStorage.setItem("keepplaying", "/");
-        keepplaying = false
-    }
-}
 function AllSounds(){
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].play();
@@ -199,6 +173,9 @@ function SoundPlay() {
         localStorage.setItem("keepplaying", "/");
         keepplaying = false
     }
+}
+function dropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 function playsound(sound) {
     Stop_all()
