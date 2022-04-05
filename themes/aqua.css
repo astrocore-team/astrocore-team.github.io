@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
     margin-right: 0px;
     margin-left: 0;
     margin-top: 0;
@@ -47,8 +48,12 @@ body {
         }
         
 }
-
-
+.Favourites button {
+    background-color: rgb(168, 168, 168);
+}
+.Favourites button:hover {
+    background-color: rgb(146, 146, 146);
+}
 body {
     text-align: left;
     width: 100%;
@@ -140,7 +145,7 @@ body h2 {
     padding: 25px;
     border-radius: 12px;
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background-color: rgb(255, 248, 147);
+    background-color: rgb(255, 255, 255);
 }
 .Button:hover {
     border-style: groove;
@@ -149,7 +154,7 @@ body h2 {
     padding-left: 7px;
     padding-right: 7px;
     border-color: white;
-    background-color: rgb(255, 239, 93);
+    background-color: rgb(223, 223, 223);
 }
 
 p {

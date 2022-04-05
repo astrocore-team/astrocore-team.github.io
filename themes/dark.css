@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
     margin-right: 0px;
     margin-left: 0;
     margin-top: 0;
@@ -82,6 +83,12 @@ body h2 {
     align-items: center;
     justify-content: space-between
 }
+.Favourites button {
+    background-color: rgb(168, 168, 168);
+}
+.Favourites button:hover {
+    background-color: rgb(146, 146, 146);
+}
 .Buttons {
     padding-top: 10px;
     text-align: center;
@@ -111,6 +118,17 @@ body h2 {
 .Stop_Button:hover {
     background-color: rgb(133, 1, 1);
 }
+.Favourites button {
+    display: unset;
+    font-size: 20px;
+    width: 280px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    padding: 25px;
+    border-radius: 12px;
+}
 .Button {
     display: unset;
     font-size: 20px;
@@ -139,9 +157,17 @@ p {
 }
 
 @media (max-width: 767px) {
+    body {
+        text-align: left;
+    }
+    .Favourites {
+        padding-top: 450px;
+    }
+
     .Button {
+        padding: 35px;
         width: 200px;
-        font-size: 13px;
+        font-size: 16px;
     }
     .wide {
         width: 500px;
@@ -149,7 +175,6 @@ p {
     #Frequency {
         width: 500px;
         }
-        
 }
 
 .popup .show {
