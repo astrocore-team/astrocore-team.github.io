@@ -10,7 +10,7 @@
  
 # Frameworks 🔗
    <p align="left">
-     <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/jquery-logo.png?raw=true" alt="Jquery Logo">
+     <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/pngegg.png?raw=true" alt="Jquery Logo">
      <hr width=100%>
      
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
