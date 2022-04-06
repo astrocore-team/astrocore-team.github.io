@@ -7,6 +7,7 @@
 * [🟪Discord](https://github.com/astrocore-team/Ultimatesoundboard#discord)
 * [©License](https://github.com/astrocore-team/Ultimatesoundboard#-license)
  <hr width=100%>
+ 
 # Frameworks 🔗
    <p align="left">
      <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/Pizzacato%20(1).png?raw=true" alt="Pizzicato Logo">
