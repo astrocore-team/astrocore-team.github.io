@@ -11,7 +11,7 @@
 # Frameworks 🔗
    <p align="left">
      <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/Pizzacato%20(1).png?raw=true" alt="Pizzicato Logo">
-     
+     <hr width=100%>
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
 <hr width=100%> 
 <p align='left'>
