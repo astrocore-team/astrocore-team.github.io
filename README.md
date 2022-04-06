@@ -7,8 +7,10 @@
 * [🟪Discord](https://github.com/astrocore-team/Ultimatesoundboard#discord)
 * [©License](https://github.com/astrocore-team/Ultimatesoundboard#-license)
  <hr width=100%>
-
+ **🔗Frameworks 
+     <img src="https://alemangui.github.io/pizzicato/img/horizontal-logo-outline.sv" alt="Pizzicato Logo" style="height: 150px; width:175px;">
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
+<hr width=100%> 
 <p align='left'>
    <img src="https://github.com/geosjobby/Geosjobby.xyz/blob/main/pictures/Html.png?raw=true" alt="Html Logo" style="height: 145px; width:165px;">
    <img src="https://github.com/geosjobby/Geosjobby.xyz/blob/main/pictures/CSS.png?raw=true" alt="CSS logo" style="height: 135px; width:145px;">
