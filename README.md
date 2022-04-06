@@ -8,7 +8,7 @@
 * [©License](https://github.com/astrocore-team/Ultimatesoundboard#-license)
  <hr width=100%>
  
-# Frameworks 🔗
+# Libraries 🔗
    <p align="left">
      <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/pngegg.png?raw=true" alt="Jquery Logo">
      <hr width=100%>
