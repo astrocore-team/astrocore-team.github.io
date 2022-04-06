@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <link id="theme" rel="stylesheet" 
 type="text/css" href="themes/dark.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
+    var $ul = $('#Favourites');
+    $ul.html(localStorage.getItem('vkf-links'));
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed");
@@ -127,14 +130,18 @@ function AllSounds(){
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].play();
 }
+
+var Favouritesarea = document.getElementById("Favourites")
 var Favouritenumber = 0;
 function Favourite(value) {
+    var $ul = $('#Favourites');
     console.log(Favouritenumber)
     const node = value;
     const clone = node.cloneNode(true);
     if (value.parentElement.id == "Favourites") {
         Favouritenumber = Favouritenumber - 1
         document.getElementById('Favourites').removeChild(value)
+        localStorage.setItem('vkf-links', $ul.html());
     }
     else if (value.parentElement.id == "myUL") {
         if (Favouritenumber == 8) {
@@ -146,6 +153,7 @@ function Favourite(value) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         clone.style.margin = "0px 2px 0px 2px";
         document.getElementById('Favourites').appendChild(clone)
+        localStorage.setItem('vkf-links', $ul.html());
         }
     }
 }
