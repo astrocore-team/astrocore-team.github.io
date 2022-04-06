@@ -10,7 +10,7 @@
  
 # Frameworks 🔗
    <p align="left">
-     <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/Pizzacato%20(1).png?raw=true" alt="Pizzicato Logo">
+     <img src="https://github.com/astrocore-team/Ultimatesoundboard/blob/main/assets/jquery-logo.png?raw=true" alt="Jquery Logo">
      <hr width=100%>
      
 *This site was coded in* **Html**, **CSS** *and* **Javascript!**
