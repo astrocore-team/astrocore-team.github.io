@@ -177,6 +177,7 @@ function SoundPlay() {
 function dropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
 function playsound(sound) {
     Stop_all()
     sound.getElementsByTagName("audio")[0].currentTime=0;
@@ -193,7 +194,7 @@ function playsound(sound) {
     <meta content="The best Memesound site in Developement" property="og:description">
     <meta content='https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/favicon2.png' property='og:image'>
     </head>
-    <body oncontextmenu="return false;">
+    <body>
         <span id="topbar">
             <h1>Ultimate Soundboard</h1>
             <ul class="teae">
@@ -242,11 +243,11 @@ function playsound(sound) {
             </div>
             <button onclick="Stop_all()" class="Stop_Button"></button>
         </span>
-        <div class="Favourites">
+        <div class="Favourites" oncontextmenu="return false;">
             <ul id="Favourites">
             </ul>
         </div>
-        <div class="Buttons">
+        <div class="Buttons" oncontextmenu="return false;">
             <ul id="myUL">
                 <button id="Random" style="color: white;" class="Button" onclick="RandomSound()"><p>Random Sound</p></button>
                 <button style="color: white; background: rgb(251,220,63); background: radial-gradient(circle, rgba(251,220,63,1) 0%, rgba(252,140,70,1) 100%);" class="Button" id="AllSounds" onclick="AllSounds()"><p>Ultimate Sound</p></button>
