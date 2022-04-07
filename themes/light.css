@@ -16,6 +16,21 @@ body {
 ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgb(0, 0, 0);
 }
+
+.popup2 .close2 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    }
+    .popup2 .close2:hover {
+    color: #ffffff;
+    }
+
 #searchbar {
     background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/av6584c34aabb39f00a10.png);
     background-size: contain;
@@ -272,6 +287,43 @@ margin-top: 0;
 color: rgb(0, 0, 0);
 font-family: Tahoma, Arial, sans-serif;
 }
+.overlay2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .overlay2:target {
+    visibility: visible;
+    opacity: 1;
+    }
+    
+    .popup2 {
+    margin: 70px auto;
+    padding: 20px;
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/whitebackground.png);
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: 0.1s ease-in;
+    }
+    
+    .popup2 h2 {
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup2 h3 {
+    margin-top: 0;
+    color: rgb(0, 0, 0);
+    font-family: Tahoma, Arial, sans-serif;
+    }
 .popup .close {
 position: absolute;
 top: 20px;

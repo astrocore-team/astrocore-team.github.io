@@ -6,6 +6,10 @@ type="text/css" href="themes/dark.css" />
 document.addEventListener("DOMContentLoaded", function(){
     var $ul = $('#Favourites');
     $ul.html(localStorage.getItem('vkf-links'));
+    if (localStorage.getItem('hasshown') == null) {
+        location.assign('#welcometoultimate')
+        localStorage.setItem('hasshown', true)
+    }
     Favouritenumber = localStorage.getItem('FavNumber');
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
     var sounds = document.getElementsByTagName('audio');
@@ -306,6 +310,13 @@ function playsound(sound) {
                             </div>
                           </div>
                     </div>
+                </div>
+            </div>
+            <div id="welcometoultimate" class="overlay2">
+                <div class="popup2">
+                    <h1 style="font-size: 40px;">Welcome To ultimate Soundboard!</h1>
+                    <a id="close2" class="close2" href="/">&times;</a>
+                    <p>Version 1.0</p>
                 </div>
             </div>
             <button onclick="Stop_all()" class="Stop_Button"></button>

@@ -8,7 +8,19 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
-
+.popup2 .close2 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    }
+    .popup2 .close2:hover {
+    color: #868686;
+    }
 ::-webkit-scrollbar-track {
     background-color: #58006e;
 }
@@ -286,6 +298,43 @@ margin-top: 0;
 color: rgb(255, 255, 255);
 font-family: Tahoma, Arial, sans-serif;
 }
+.overlay2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .overlay2:target {
+    visibility: visible;
+    opacity: 1;
+    }
+    
+    .popup2 {
+    margin: 70px auto;
+    padding: 20px;
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/purplebackground.png);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: 0.1s ease-in;
+    background-color: rgb(54, 0, 43);
+    }
+    
+    .popup2 h2 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup2 h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-family: Tahoma, Arial, sans-serif;
+    }
 .popup .close {
 position: absolute;
 top: 20px;
