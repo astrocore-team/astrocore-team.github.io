@@ -6,6 +6,7 @@ type="text/css" href="themes/dark.css" />
 document.addEventListener("DOMContentLoaded", function(){
     var $ul = $('#Favourites');
     $ul.html(localStorage.getItem('vkf-links'));
+    Favouritenumber = localStorage.getItem('FavNumber');
     var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
     var sounds = document.getElementsByTagName('audio');
     for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed");
@@ -181,10 +182,11 @@ function Favourite(value) {
         document.getElementById('Favourites').removeChild(value)
         //And save changes to localstorage
         localStorage.setItem('vkf-links', $ul.html());
+        localStorage.setItem('FavNumber', Favouritenumber);
     }
     else if (value.parentElement.id == "myUL") {
         //If it isnt it will first check if there is a maximum amount of favourites already
-        if (Favouritenumber == 8) {
+        if (Favouritenumber == 8 || Favouritenumber > 8) {
             window.alert("You can have a maximum of 8 Favorites!")
             return
         }
@@ -196,6 +198,7 @@ function Favourite(value) {
         document.getElementById('Favourites').appendChild(clone)
         //And save changes to localstorage
         localStorage.setItem('vkf-links', $ul.html());
+        localStorage.setItem('FavNumber', Favouritenumber);
         }
     }
 }
