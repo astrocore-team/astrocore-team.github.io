@@ -28,7 +28,13 @@ type="text/css" href="themes/dark.css" />
 <script>
 document.addEventListener("DOMContentLoaded", function(){
     var $ul = $('#Favourites');
-    $ul.html(localStorage.getItem('vkf-links'));
+    if (localStorage.getItem('vkf-links') == null) {
+        location.assign('#welcometoultimate')
+        localStorage.setItem('vkf-links', "")
+    }
+    else {
+        $ul.html(localStorage.getItem('vkf-links'));
+    }
     if (localStorage.getItem('hasshown') == null) {
         location.assign('#welcometoultimate')
         localStorage.setItem('hasshown', true)
