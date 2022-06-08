@@ -2,27 +2,9 @@
 <link id="theme" rel="stylesheet" 
 type="text/css" href="themes/dark.css" />
 <style>
-    
-@media (max-width: 767px) {
-    .Favourites {
-        padding-top: 450px;
+    body {
+        background-color: #1a1a1a;
     }
-    .wide {
-        width: 500px;
-    }
-    #Frequency {
-        width: 500px;
-        }
-    #texttospeech {
-        width: 500px;
-    }
-    .settingsbutton {
-        visibility: hidden;
-    }
-    .Favourites {
-        padding-top: 500px;
-    }
-        }
 </style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -277,18 +259,18 @@ function playsound(sound) {
                         <div class="dropdown">
                             <button onclick="dropdown()" class="dropbtn">Themes</button>
                             <div id="myDropdown" class="dropdown-content">
-                                <button onclick="toggleTheme('themes/light.css')">
+                                <button class="lightbutton" onclick="toggleTheme('themes/light.css')">
                                     Light
                                 </button>
-                                <button onclick="toggleTheme('themes/dark.css')">
+                                <button class="darkbutton" onclick="toggleTheme('themes/dark.css')">
                                     Dark
                                 </button>
-                                <button onclick="toggleTheme('themes/red.css')">
+                                <button class="redbutton" onclick="toggleTheme('themes/red.css')">
                                     Red
-                                <button onclick="toggleTheme('themes/purple.css')">
+                                <button class="purplebutton" onclick="toggleTheme('themes/purple.css')">
                                     Purple
                                 </button>
-                                <button onclick="toggleTheme('themes/aqua.css')">
+                                <button class="aquabutton" onclick="toggleTheme('themes/aqua.css')">
                                     Aqua
                                 </button>
                             </div>

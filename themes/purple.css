@@ -51,7 +51,21 @@ body {
     width: 100%;
     background-color: #58006e;
 }
-
+.lightbutton {
+    background-color:  rgb(147, 221, 255);
+}
+.darkbutton {
+    background-color: #2e2d2d;
+}
+.redbutton {
+    background-color: #990404;
+}
+.purplebutton {
+    background-color: #58006e;
+}
+.aquabutton {
+    background-color: rgb(41, 163, 201);
+}
 @media (max-width: 767px) {
     .Button {
         width: 200px;
