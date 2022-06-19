@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <link id="theme" rel="stylesheet" 
 type="text/css" href="themes/dark.css" />
-<style>
-    body {
-        background-color: #1a1a1a;
-    }
-</style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
@@ -257,27 +252,27 @@ function playsound(sound) {
                             <input type="checkbox" id="SoundPlay" name="SoundPlay" onchange="SoundPlay()">
                         </ul>
                         <div class="dropdown">
-                                <button onclick="dropdown()" class="dropbtn">Themes</button>
-                                <div id="myDropdown" class="dropdown-content">
-                                    <button onclick="toggleTheme('themes/light.css')">
-                                        Light
-                                    </button>
-                                    <button onclick="toggleTheme('themes/dark.css')">
-                                        Dark
-                                    </button>
-                                    <button onclick="toggleTheme('themes/red.css')">
-                                        Red
-                                    <button onclick="toggleTheme('themes/purple.css')">
-                                        Purple
-                                    </button>
-                                    <button onclick="toggleTheme('themes/aqua.css')">
-                                        Aqua
-                                    </button>
-                                </div>
-                              </div>
-                        </div>
+                            <button onclick="dropdown()" class="dropbtn">Themes</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button class="lightbutton" onclick="toggleTheme('themes/light.css')">
+                                    Light
+                                </button>s
+                                <button class="darkbutton" onclick="toggleTheme('themes/dark.css')">
+                                    Dark
+                                </button>
+                                <button class="redbutton" onclick="toggleTheme('themes/red.css')">
+                                    Red
+                                <button class="purplebutton" onclick="toggleTheme('themes/purple.css')">
+                                    Purple
+                                </button>
+                                <button class="aquabutton" onclick="toggleTheme('themes/aqua.css')">
+                                    Aqua
+                                </button>
+                            </div>
+                          </div>
                     </div>
                 </div>
+            </div>
             <div id="welcometoultimate" class="overlay2">
                 <div class="popup2">
                     <h1 style="font-size: 40px;">Welcome to Ultimate Soundboard!</h1>

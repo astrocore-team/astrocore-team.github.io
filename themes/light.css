@@ -148,7 +148,21 @@ body h2 {
     font-family: "Segoe UI", Tahoma, sans-serif;
     background-color: rgb(147, 221, 255);
 }
-
+.lightbutton {
+    background-color:  rgb(147, 221, 255);
+}
+.darkbutton {
+    background-color: #2e2d2d;
+}
+.redbutton {
+    background-color: #990404;
+}
+.purplebutton {
+    background-color: #58006e;
+}
+.aquabutton {
+    background-color: rgb(41, 163, 201);
+}
 .Button:hover {
     border-style: groove;
     border-width: 3px;
