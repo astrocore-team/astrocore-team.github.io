@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <link id="theme" rel="stylesheet" 
-type="text/css" href="themes/dark.css" />
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+type="text/css" href="themes/dark.css" />  <!-- Default Theme -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
 <script>
-document.addEventListener("DOMContentLoaded", function(){
-    if (localStorage.getItem('hasshown') == null) {
-        location.assign('#welcometoultimate')
-        localStorage.setItem('hasshown', true)
+document.addEventListener("DOMContentLoaded", function(){  // When the page is loaded
+    if (localStorage.getItem('hasshown') == null) {  // If the user has not seen the message
+        location.assign('#welcometoultimate')  // Go to the welcome page
+        localStorage.setItem('hasshown', true)  // Set the hasshown variable to true
+    } 
+    Favouritenumber = localStorage.getItem('FavNumber'); // Get the favourite number from local storage
+    var slider = document.getElementById("myRange").value = localStorage.getItem("speed"); // Get the speed from local storage and set it to the slider
+    var sounds = document.getElementsByTagName('audio'); // Get all the audio tags
+    for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed"); // Set the playback rate of all the audio tags to the speed from local storage
+    var theme = localStorage.getItem("theme"); // Get the theme from local storage
+    if (theme != null) { // If the theme is not null
+        var themeslider = document.getElementById('theme').href = localStorage.getItem("theme"); // Set the theme to the theme from local storage
     }
-    Favouritenumber = localStorage.getItem('FavNumber');
-    var slider = document.getElementById("myRange").value = localStorage.getItem("speed");
-    var sounds = document.getElementsByTagName('audio');
-    for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed");
-    var theme = localStorage.getItem("theme");
-    if (theme != null) {
-        var themeslider = document.getElementById('theme').href = localStorage.getItem("theme");
-    }
-    var checbox = localStorage.getItem("keepplaying");
-    if (checbox != null) {
-        if (checbox == "#") {
-            var checckbox = document.getElementById("close").href = "#"
-            var checckbox = document.getElementById("SoundPlay").checked = true;
-            keepplaying = true
+    var checbox = localStorage.getItem("keepplaying"); // Get the keep playing from local storage
+    if (checbox != null) { // If the keep playing is not null
+        if (checbox == "#") { // If the keep playing is true
+            var checckbox = document.getElementById("close").href = "#" // Set the checkbox to true
+            var checckbox = document.getElementById("SoundPlay").checked = true;   // Set the checkbox to true
+            keepplaying = true // Set the keep playing to true
         }
-        else if (checbox == "/") {
+        else if (checbox == "/") { // If the keep playing is false
             var checckbox = document.getElementById("close").href = "/"
             var checckbox = document.getElementById("SoundPlay").checked = false;
             keepplaying = false
@@ -256,7 +256,7 @@ function playsound(sound) {
                             <div id="myDropdown" class="dropdown-content">
                                 <button class="lightbutton" onclick="toggleTheme('themes/light.css')">
                                     Light
-                                </button>s
+                                </button>
                                 <button class="darkbutton" onclick="toggleTheme('themes/dark.css')">
                                     Dark
                                 </button>
