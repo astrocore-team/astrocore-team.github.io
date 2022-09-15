@@ -1,3 +1,4 @@
+var nsfwsounds = false
 document.addEventListener("DOMContentLoaded", function(){  // When the page is loaded
     if (localStorage.getItem('hasshown') == null) {  // If the user has not seen the message
         location.assign('#welcometoultimate')  // Go to the welcome page
@@ -25,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function(){  // When the page is l
         }
     }
 
-    var nsfwsounds = false
     var nsfwsoundscookie = localStorage.getItem("nsfwsounds");
     if (nsfwsoundscookie != null) { // If the keep playing is not null
         if (nsfwsoundscookie == "true") { // If the keep playing is true
