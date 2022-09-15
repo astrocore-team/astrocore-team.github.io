@@ -297,10 +297,6 @@ transition: opacity 500ms;
 visibility: hidden;
 opacity: 0;
 }
-.overlay:target {
-visibility: visible;
-opacity: 1;
-}
 
 .popup {
 margin: 70px auto;
@@ -491,3 +487,9 @@ animation-timing-function: linear;
   .content {
     text-align: center;
   }
+
+  .overlay .display {
+
+    visibility: visible;
+    
+}
