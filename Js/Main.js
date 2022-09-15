@@ -238,11 +238,14 @@ function NSFWSounds() {
 function RandomSound() {
     Stop_all()
     if (nsfwsounds = false) {
-        let elements = document.getElementsByTagName('audio').querySelectorAll('span:not([NSFW])');
+        let nsfwelements = document.getElementsByTagName('audio').querySelectorAll('span:not([NSFW])');
+        let arrayOfElements = Array.from(nsfwelements);
+        var item = arrayOfElements[Math.floor(Math.random()*arrayOfElements.length)];
+        item.play()
     } else {
-        let elements = document.getElementsByTagName('audio');
+        let nsfwelements = document.getElementsByTagName('audio');
+        let arrayOfElements = Array.from(nsfwelements);
+        var item = arrayOfElements[Math.floor(Math.random()*arrayOfElements.length)];
+        item.play()
     }
-    let arrayOfElements = Array.from(elements);
-    var item = arrayOfElements[Math.floor(Math.random()*arrayOfElements.length)];
-    item.play()
 }
