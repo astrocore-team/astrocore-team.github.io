@@ -33,13 +33,6 @@ function toggleTheme(value) {
   sheets[0].href = value;
 }
 
-function RandomSound() {
-    Stop_all()
-    let elements = document.getElementsByTagName('audio');;
-    let arrayOfElements = Array.from(elements);
-    var item = arrayOfElements[Math.floor(Math.random()*arrayOfElements.length)];
-    item.play()
-}
 function myFunction() {
 let input = document.getElementById('searchbar').value
 input=input.toLowerCase();
@@ -229,4 +222,15 @@ function NSFWSounds() {
         localStorage.setItem("nsfwsounds", "false");
         nsfwsounds = false
     }
+}
+function RandomSound() {
+    Stop_all()
+    if (nsfwsounds = false) {
+        let elements = document.getElementsByTagName('audio').querySelectorAll('span:not([NSFW])');
+    } else {
+        let elements = document.getElementsByTagName('audio');
+    }
+    let arrayOfElements = Array.from(elements);
+    var item = arrayOfElements[Math.floor(Math.random()*arrayOfElements.length)];
+    item.play()
 }
