@@ -210,3 +210,23 @@ function playsound(sound) {
     sound.getElementsByTagName("audio")[0].currentTime=0;
     sound.getElementsByTagName("audio")[0].play();
 }
+
+var nsfwsounds = false
+function NSFWSounds() {
+    //If that setting is false...
+    if (nsfwsounds == false) {
+        //It will set it to True
+        var nsfw = document.getElementsByClassName('NSFW');
+        for(i=0; i<nsfw.length; i++) nsfw[i].style.display="none";
+        localStorage.setItem("nsfwsounds", "true");
+        nsfwsounds = true
+    }
+    //If that setting is true...
+    else if (nsfwsounds == true) {
+        //It will set it to False
+        var nsfw = document.getElementsByClassName('NSFW');
+        for(i=0; i<nsfw.length; i++) nsfw[i].style.display="unset";
+        localStorage.setItem("nsfwsounds", "false");
+        nsfwsounds = false
+    }
+}
