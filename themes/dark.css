@@ -493,3 +493,18 @@ animation-timing-function: linear;
     visibility: visible;
     
 }
+.controls {
+    text-align: right;
+    background-color: rgb(93, 93, 93);
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+}
+.controls .playback-time {
+    width: 80%;
+    vertical-align: middle;
+}

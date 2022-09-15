@@ -200,5 +200,50 @@ type="text/css" href="themes/dark.css" />  <!-- Default Theme -->
               </ul>
         </div>
         <a href="https://google.com" title="Panic Button To redirect you from this site" class="panic"><img src="assets/panic-btn.png" width="50px" height="50px"></img></a>
+        <div class="controls">
+            <span id="current-time">25:28</span>
+            <input class="playback-time" aria-label="Current Time" type="range" id="seekbar" value="0" aria-valuetext="25:28" max="1528.267755">
+            <script>
+                var audio = document.querySelector('audio');
+                audio.addEventListener('play', function() {
+                    $audio = getCurrentlyPlayingAudio();
+                    $seekbar = document.getElementById("seekbar");
+
+                    // Set max value when you know the duration
+                    $audio.onloadedmetadata = () => $seekbar.max = $audio.duration
+                    // update audio position
+                    $seekbar.onchange = () => $audio.currentTime = $seekbar.value
+                    // update range input when currentTime updates
+                    $audio.ontimeupdate = () => $seekbar.value = $audio.currentTime 
+                
+                    $audio.addEventListener('timeupdate',function (){
+                
+                        var sec= new Number();
+                        var min= new Number();
+                        sec = Math.floor( $audio.currentTime );    
+                        min = Math.floor( sec / 60 );
+                        min = min >= 10 ? min : '0' + min;    
+                        sec = Math.floor( sec % 60 );
+                        sec = sec >= 10 ? sec : '0' + sec;
+                
+                        document.getElementById('$seekbar').setAttribute('aria-valuetext',min + ":"+ sec);
+                        document.getElementById('current-time').innerHTML = min + ":"+ sec;         
+                    });
+
+                });
+
+                function getCurrentlyPlayingAudio() {
+
+                    for(const audio of document.querySelectorAll('audio')) {
+
+                        if(!audio.paused) {
+                        return audio;
+                        } else {
+                            return undefined;
+                        }
+                    }  
+                }
+                </script>
+        </div>
     </body>
 </html>
