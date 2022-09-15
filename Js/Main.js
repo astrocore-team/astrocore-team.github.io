@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){  // When the page is l
         }
     }
 
-    var nsfwsoundscookie = localStorage.getItem("nsfwsounds");
+    var nsfwsoundscookie = localStorage.getItem("nsfwsoundscookie");
     if (nsfwsoundscookie != null) { // If the keep playing is not null
         if (nsfwsoundscookie == "true") { // If the keep playing is true
             var nsfwcheckbox = document.getElementById("NSFWSounds").checked = true;   // Set the checkbox to true
@@ -224,7 +224,7 @@ function NSFWSounds() {
         //It will set it to True
         var nsfw = document.getElementsByClassName('NSFW');
         for(i=0; i<nsfw.length; i++) nsfw[i].style.display="unset";
-        localStorage.setItem("nsfwsounds", "true");
+        localStorage.setItem("nsfwsoundscookie", "true");
         nsfwsounds = true
     }
     //If that setting is true...
@@ -232,7 +232,7 @@ function NSFWSounds() {
         //It will set it to False
         var nsfw = document.getElementsByClassName('NSFW');
         for(i=0; i<nsfw.length; i++) nsfw[i].style.display="none";
-        localStorage.setItem("nsfwsounds", "false");
+        localStorage.setItem("nsfwsoundscookie", "false");
         nsfwsounds = false
     }
 }
