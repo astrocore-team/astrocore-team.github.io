@@ -213,11 +213,11 @@ document.addEventListener("DOMContentLoaded", function(){
     if (nsfwsoundscookie != null) { // If the keep playing is not null
         if (nsfwsoundscookie == "true") { // If the keep playing is true
             var nsfwcheckbox = document.getElementById("NSFWSounds").checked = true;   // Set the checkbox to true
-            nsfwsounds = true // Set the NSFW Sounds Showing to true
+            nsfwsounds = true; // Set the NSFW Sounds Showing to true
         }
         else if (checbox == "false") { // Set the NSFW Sounds Showing to true
             var nsfwcheckbox = document.getElementById("NSFWSounds").checked = false;
-            nsfwsounds = false // Set the NSFW Sounds Showing to true
+            nsfwsounds = false; // Set the NSFW Sounds Showing to true
         }
     }
 });
@@ -229,7 +229,7 @@ function NSFWSounds() {
         var nsfw = document.getElementsByClassName('NSFW');
         for(i=0; i<nsfw.length; i++) nsfw[i].style.display="unset";
         localStorage.setItem("nsfwsoundscookie", "true");
-        nsfwsounds = true
+        nsfwsounds = true;
     }
     //If that setting is true...
     else if (nsfwsounds == true) {
@@ -237,7 +237,7 @@ function NSFWSounds() {
         var nsfw = document.getElementsByClassName('NSFW');
         for(i=0; i<nsfw.length; i++) nsfw[i].style.display="none";
         localStorage.setItem("nsfwsoundscookie", "false");
-        nsfwsounds = false
+        nsfwsounds = false;
     }
 }
 
