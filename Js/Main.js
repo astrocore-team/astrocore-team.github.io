@@ -214,10 +214,14 @@ document.addEventListener("DOMContentLoaded", function(){
         if (nsfwsoundscookie == "true") { // If the keep playing is true
             var nsfwcheckbox = document.getElementById("NSFWSounds").checked = true;   // Set the checkbox to true
             nsfwsounds = true; // Set the NSFW Sounds Showing to true
+            var nsfw = document.getElementsByClassName('NSFW');
+            for(i=0; i<nsfw.length; i++) nsfw[i].style.display="unset";
         }
         else if (checbox == "false") { // Set the NSFW Sounds Showing to true
             var nsfwcheckbox = document.getElementById("NSFWSounds").checked = false;
-            nsfwsounds = false; // Set the NSFW Sounds Showing to true
+            nsfwsounds = false; // Set the NSFW Sounds Showing to false
+            var nsfw = document.getElementsByClassName('NSFW');
+            for(i=0; i<nsfw.length; i++) nsfw[i].style.display="none";
         }
     }
 });
