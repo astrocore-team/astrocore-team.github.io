@@ -218,7 +218,7 @@ function playsound(sound) {
     sound.getElementsByTagName("audio")[0].play();
 }
 
-var nsfwsounds;
+var nsfwsounds = false;
 function NSFWSounds() {
     //If that setting is false...
     if (nsfwsounds == false) {
