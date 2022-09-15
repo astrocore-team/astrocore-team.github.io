@@ -260,3 +260,16 @@ function RandomSound() {
     }
 }
 
+var menuvisable = false;
+function togglesettings() {
+    if (menuvisable = false) {
+        console.log("toggle");
+        menu = document.getElementById("settings").style.display="unset";
+        menuvisable = true;
+    }
+    if (menuvisable = true) {
+        console.log("toggle");
+        menu = document.getElementById("settings").style.display="none";
+        menuvisable = false;
+    }
+}
