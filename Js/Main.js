@@ -217,7 +217,7 @@ function NSFWSounds() {
     if (nsfwsounds == false) {
         //It will set it to True
         var nsfw = document.getElementsByClassName('NSFW');
-        for(i=0; i<nsfw.length; i++) nsfw[i].style.display="none";
+        for(i=0; i<nsfw.length; i++) nsfw[i].style.display="unset";
         localStorage.setItem("nsfwsounds", "true");
         nsfwsounds = true
     }
@@ -225,7 +225,7 @@ function NSFWSounds() {
     else if (nsfwsounds == true) {
         //It will set it to False
         var nsfw = document.getElementsByClassName('NSFW');
-        for(i=0; i<nsfw.length; i++) nsfw[i].style.display="unset";
+        for(i=0; i<nsfw.length; i++) nsfw[i].style.display="none";
         localStorage.setItem("nsfwsounds", "false");
         nsfwsounds = false
     }
