@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){  // When the page is l
     } 
     Favouritenumber = localStorage.getItem('FavNumber'); // Get the favourite number from local storage
     if (localStorage.getItem("speed") != null) {
-        var slider = document.getElementById("myRange").value = localStorage.getItem("speed"); // Get the speed from local storage and set it to the slider
+        var slider = document.getElementById("myRange").value = parseInt(localStorage.getItem("speed")); // Get the speed from local storage and set it to the slider
         var sounds = document.getElementsByTagName('audio'); // Get all the audio tags
         for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed"); // Set the playback rate of all the audio tags to the speed from local storage
     }
