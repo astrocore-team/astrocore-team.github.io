@@ -1,13 +1,14 @@
-var nsfwsounds = false
 document.addEventListener("DOMContentLoaded", function(){  // When the page is loaded
     if (localStorage.getItem('hasshown') == null) {  // If the user has not seen the message
         location.assign('#welcometoultimate')  // Go to the welcome page
         localStorage.setItem('hasshown', true)  // Set the hasshown variable to true
     } 
     Favouritenumber = localStorage.getItem('FavNumber'); // Get the favourite number from local storage
-    var slider = document.getElementById("myRange").value = localStorage.getItem("speed"); // Get the speed from local storage and set it to the slider
-    var sounds = document.getElementsByTagName('audio'); // Get all the audio tags
-    for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed"); // Set the playback rate of all the audio tags to the speed from local storage
+    if (localStorage.getItem("speed") != null) {
+        var slider = document.getElementById("myRange").value = localStorage.getItem("speed"); // Get the speed from local storage and set it to the slider
+        var sounds = document.getElementsByTagName('audio'); // Get all the audio tags
+        for(i=0; i<sounds.length; i++) sounds[i].playbackRate=localStorage.getItem("speed"); // Set the playback rate of all the audio tags to the speed from local storage
+    }
     var theme = localStorage.getItem("theme"); // Get the theme from local storage
     if (theme != null) { // If the theme is not null
         var themeslider = document.getElementById('theme').href = localStorage.getItem("theme"); // Set the theme to the theme from local storage
