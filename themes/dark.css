@@ -286,6 +286,11 @@ align-items: center;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
   }
+
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    }
 .overlay {
 position: fixed;
 top: 0;
@@ -488,9 +493,9 @@ animation-timing-function: linear;
     text-align: center;
   }
 
-  .overlay .display {
+  .overlay {
 
-    visibility: visible;
+    display: none;
     
 }
 .controls {
@@ -505,6 +510,7 @@ animation-timing-function: linear;
     left: 100%;
 }
 .controls .playback-time {
+    padding-left: 5px;
     width: 80%;
     vertical-align: middle;
 }

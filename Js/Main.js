@@ -261,7 +261,5 @@ function RandomSound() {
 }
 
 function togglesettings() {
-    var value = document.getElementById("settings");
-
-    value.classList.toggle("display");
+    var value = document.getElementsByClassName("overlay").style.display="unset";
 }
