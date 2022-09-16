@@ -259,7 +259,3 @@ function RandomSound() {
         item.play()
     }
 }
-
-function togglesettings() {
-    var value = document.getElementsByClassName("overlay").style.display="unset";
-}
