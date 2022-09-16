@@ -13,19 +13,6 @@ document.addEventListener("DOMContentLoaded", function(){  // When the page is l
     if (theme != null) { // If the theme is not null
         var themeslider = document.getElementById('theme').href = localStorage.getItem("theme"); // Set the theme to the theme from local storage
     }
-    var checbox = localStorage.getItem("keepplaying"); // Get the keep playing from local storage
-    if (checbox != null) { // If the keep playing is not null
-        if (checbox == "#") { // If the keep playing is true
-            var checckbox = document.getElementById("close").href = "#" // Set the checkbox to true
-            var checckbox = document.getElementById("SoundPlay").checked = true;   // Set the checkbox to true
-            keepplaying = true // Set the keep playing to true
-        }
-        else if (checbox == "/") { // If the keep playing is false
-            var checckbox = document.getElementById("close").href = "/"
-            var checckbox = document.getElementById("SoundPlay").checked = false;
-            keepplaying = false
-        }
-    }
 });
    
 function toggleTheme(value) { 
@@ -170,25 +157,6 @@ window.onclick = function(event) {
       }
     }
   }
-}
-
-//Toggling if keep playing on settings close
-var keepplaying = false
-function SoundPlay() {
-    //If that setting is false...
-    if (keepplaying == false) {
-        //It will set it to True
-        var checckbox = document.getElementById("close").href = "#"
-        localStorage.setItem("keepplaying", "#");
-        keepplaying = true
-    }
-    //If that setting is true...
-    else if (keepplaying == true) {
-        //It will set it to False
-        var checckbox = document.getElementById("close").href = "/"
-        localStorage.setItem("keepplaying", "/");
-        keepplaying = false
-    }
 }
 
 //Toggling Dropdown Menu
