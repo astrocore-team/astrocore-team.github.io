@@ -1,18 +1,11 @@
 body {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     margin-right: 0px;
     margin-left: 0;
     margin-top: 0;
 }
-body::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    width: 10px;
 }
 .dropbtn {
     border-radius: 8px;
@@ -35,6 +28,9 @@ body::-webkit-scrollbar {
     background-position: 100%;
     background-repeat: no-repeat;
 }
+::-webkit-scrollbar-track {
+    background-color: #1d1d1d;
+}
 .lightbutton {
     background-color:  rgb(147, 221, 255);
     font-weight: 600;
@@ -56,7 +52,10 @@ body::-webkit-scrollbar {
     font-weight: 600;
 }
 
-body {
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgb(0, 0, 0);
+}
+ body {
     text-align: left;
     width: 100%;
     background-color: #1d1d1d;
@@ -124,7 +123,6 @@ body h2 {
     background-color: rgb(146, 146, 146);
 }
 .Buttons {
-    overflow: scroll;
     padding-top: 10px;
     text-align: center;
     width: 100%;
@@ -132,15 +130,6 @@ body h2 {
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
-}
-.Buttons::-webkit-scrollbar {
-    width: 10px;
-    }
-.Buttons::-webkit-scrollbar-track {
-    background-color: #1d1d1d;
-}
-.Buttons::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgb(0, 0, 0);
 }
 .Stop_Button {
     background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
@@ -182,6 +171,7 @@ body h2 {
     padding-left: 7px;
     padding-right: 7px;
     white-space: nowrap;
+    overflow: hidden;
     border: none;
     padding: 25px;
     border-radius: 12px;
