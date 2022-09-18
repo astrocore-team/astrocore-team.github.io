@@ -7,6 +7,9 @@ body {
 ::-webkit-scrollbar {
     width: 10px;
 }
+.dropbtn {
+    border-radius: 8px;
+}
 #searchbar {
     background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/av6584c34aabb39f00a10.png);
     background-size: contain;
@@ -30,18 +33,23 @@ body {
 }
 .lightbutton {
     background-color:  rgb(147, 221, 255);
+    font-weight: 600;
 }
 .darkbutton {
     background-color: #2e2d2d;
+    font-weight: 600;
 }
 .redbutton {
     background-color: #990404;
+    font-weight: 600;
 }
 .purplebutton {
     background-color: #58006e;
+    font-weight: 600;
 }
 .aquabutton {
     background-color: rgb(41, 163, 201);
+    font-weight: 600;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -69,6 +77,16 @@ body h1 {
     width: 100%;
     font-size: 60px;
     text-align: center;
+    animation: pulse;
+  animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     color: rgb(255, 255, 255);
 }
 body h2 {
@@ -110,7 +128,8 @@ body h2 {
     width: 100%;
     font-family: "Segoe UI", Tahoma, sans-serif;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    font-weight: 600;
 }
 .Stop_Button {
     background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
