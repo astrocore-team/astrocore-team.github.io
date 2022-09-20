@@ -1,4 +1,16 @@
-document.addEventListener("DOMContentLoaded", function(){  // When the page is loaded
+document.addEventListener("DOMContentLoaded", function(){ 
+    if (localStorage.getItem('vkf-links') == null) {
+        return
+    }
+    else {
+        var $ul = $('#Favourites');
+        $ul.html(localStorage.getItem('vkf-links'));
+    }
+    if (localStorage.getItem('FavNumber') == null) {
+        return
+    } else {
+        Favouritenumber = parseInt(localStorage.getItem('FavNumber')); // When the page is loaded
+    }
     if (localStorage.getItem('hasshown') == null) {  // If the user has not seen the message
         location.assign('#welcometoultimate')  // Go to the welcome page
         localStorage.setItem('hasshown', true)  // Set the hasshown variable to true
@@ -246,4 +258,41 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+//Favourite Bar writing to storage
+var Favouritesarea = document.getElementById("Favourites")
+var Favouritenumber = 0;
+function Favourite(value) {
+    //Defining Variables
+    var $ul = $('#Favourites');
+    console.log(Favouritenumber)
+    const node = value;
+    const clone = node.cloneNode(true);
+    //Checking if the button is already in favourites
+    if (value.parentElement.id == "Favourites") {
+        //if it is it will remove it from favourites
+        Favouritenumber = parseInt(Favouritenumber) - 1;
+        document.getElementById('Favourites').removeChild(value);
+        //And save changes to localstorage
+        localStorage.setItem('vkf-links', $ul.html());
+        localStorage.setItem('FavNumber', Favouritenumber);
+    }
+    else if (value.parentElement.id == "myUL") {
+        //If it isnt it will first check if there is a maximum amount of favourites already
+        if (Favouritenumber == 8 || Favouritenumber > 8) {
+            window.alert("You can have a maximum of 8 Favorites!");
+            return;
+        }
+        //If there isnt max favourites it will add it to favourites
+        else {
+        Favouritenumber = parseInt(Favouritenumber) + 1;
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        clone.style.margin = "0px 2px 0px 2px";
+        document.getElementById('Favourites').appendChild(clone)
+        //And save changes to localstorage
+        localStorage.setItem('vkf-links', $ul.html());
+        localStorage.setItem('FavNumber', Favouritenumber);
+        }
+    }
 }
