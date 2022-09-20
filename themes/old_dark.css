@@ -4,35 +4,12 @@ body {
     margin-left: 0;
     margin-top: 0;
 }
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 .dropbtn {
     border-radius: 8px;
 }
-::-webkit-scrollbar-track {
-    background-color: #1d1d1d;
-}
-
-::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgb(0, 0, 0);
-}
-
-.popup2 .close2 {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    }
-    .popup2 .close2:hover {
-    color: #ffffff;
-    }
-
 #searchbar {
     background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/av6584c34aabb39f00a10.png);
     background-size: contain;
@@ -51,7 +28,34 @@ body {
     background-position: 100%;
     background-repeat: no-repeat;
 }
-body {
+::-webkit-scrollbar-track {
+    background-color: #1d1d1d;
+}
+.lightbutton {
+    background-color:  rgb(147, 221, 255);
+    font-weight: 600;
+}
+.darkbutton {
+    background-color: #2e2d2d;
+    font-weight: 600;
+}
+.redbutton {
+    background-color: #990404;
+    font-weight: 600;
+}
+.purplebutton {
+    background-color: #58006e;
+    font-weight: 600;
+}
+.aquabutton {
+    background-color: rgb(41, 163, 201);
+    font-weight: 600;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgb(0, 0, 0);
+}
+ body {
     text-align: left;
     width: 100%;
     background-color: #1d1d1d;
@@ -73,7 +77,6 @@ body h1 {
     width: 100%;
     font-size: 60px;
     text-align: center;
-    color: rgb(255, 255, 255);
     animation: pulse;
   animation-duration: 1s;
     -moz-animation-duration: 1s;
@@ -84,12 +87,7 @@ body h1 {
     animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
-}
-.Favourites button {
-    background-color: rgb(87, 122, 216);
-}
-.Favourites button:hover {
-    background-color: rgb(57, 80, 145);
+    color: rgb(255, 255, 255);
 }
 body h2 {
     font-family: Arial, Helvetica, sans-serif;
@@ -118,13 +116,20 @@ body h2 {
     align-items: center;
     justify-content: space-between
 }
+.Favourites button {
+    background-color: rgb(168, 168, 168);
+}
+.Favourites button:hover {
+    background-color: rgb(146, 146, 146);
+}
 .Buttons {
     padding-top: 10px;
     text-align: center;
     width: 100%;
     font-family: "Segoe UI", Tahoma, sans-serif;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    font-weight: 600;
 }
 .Stop_Button {
     background-image: url("https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/Stop.png");
@@ -138,7 +143,7 @@ body h2 {
     border: none;
     border-width: 2px;
     border-style: outset;
-    border-color: rgb(0, 0, 0);
+    border-color: white;
     border-radius: 12px;
     width: 90%;
     padding: 10px;
@@ -146,6 +151,17 @@ body h2 {
 }
 .Stop_Button:hover {
     background-color: rgb(133, 1, 1);
+}
+.Favourites button {
+    display: unset;
+    font-size: 20px;
+    width: 280px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    padding: 25px;
+    border-radius: 12px;
 }
 .Button {
     display: unset;
@@ -160,28 +176,7 @@ body h2 {
     padding: 25px;
     border-radius: 12px;
     font-family: "Segoe UI", Tahoma, sans-serif;
-    font-weight: 600;
     background-color: rgb(255, 248, 147);
-}
-.lightbutton {
-    background-color:  rgb(147, 221, 255);
-    font-weight: 600;
-}
-.darkbutton {
-    background-color: #2e2d2d;
-    font-weight: 600;
-}
-.redbutton {
-    background-color: #990404;
-    font-weight: 600;
-}
-.purplebutton {
-    background-color: #58006e;
-    font-weight: 600;
-}
-.aquabutton {
-    background-color: rgb(41, 163, 201);
-    font-weight: 600;
 }
 .Button:hover {
     border-style: groove;
@@ -198,11 +193,31 @@ p {
 }
 
 @media (max-width: 767px) {
-    .Button {
-        width: 200px;
-        font-size: 13px;
+    body {
+        text-align: left;
     }
+    .Favourites {
+        padding-top: 450px;
+    }
+
+    .Button {
+        padding: 35px;
+        width: 200px;
+        font-size: 16px;
+    }
+    .wide {
+        width: 500px;
+    }
+    #Frequency {
+        width: 500px;
+        }
 }
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
 
 .Button + .Button { margin-top: 10px; }
 
@@ -213,7 +228,7 @@ p {
     background-size: cover;
     border-width: 0px 0px 4px 0px;
     border-style: inset;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
     text-align: center;
     margin-left: 0;
     padding: 20px;
@@ -285,6 +300,11 @@ width: 100%;
 font-family: "Segoe UI", Tahoma, sans-serif;
 align-items: center;
 }
+
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    }
 .overlay {
 position: fixed;
 top: 0;
@@ -295,10 +315,6 @@ background: rgba(0, 0, 0, 0.7);
 transition: opacity 500ms;
 visibility: hidden;
 opacity: 0;
-}
-.overlay:target {
-visibility: visible;
-opacity: 1;
 }
 
 .popup {
@@ -322,6 +338,28 @@ margin-top: 0;
 color: rgb(255, 255, 255);
 font-family: Tahoma, Arial, sans-serif;
 }
+
+.popup2 {
+    margin: 70px auto;
+    padding: 20px;
+    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
+    background-color: rgb(15, 15, 15);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: 0.1s ease-in;
+    }
+    
+.popup2 h2 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup2 h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    font-family: Tahoma, Arial, sans-serif;
+}
 .overlay2 {
     position: fixed;
     top: 0;
@@ -333,32 +371,10 @@ font-family: Tahoma, Arial, sans-serif;
     visibility: hidden;
     opacity: 0;
     }
-    .overlay2:target {
+.overlay2:target {
     visibility: visible;
     opacity: 1;
-    }
-    
-    .popup2 {
-    margin: 70px auto;
-    padding: 20px;
-    background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.jpg);
-    background-color: rgb(15, 15, 15);
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: 0.1s ease-in;
-    }
-    
-    .popup2 h2 {
-    margin-top: 0;
-    color: rgb(255, 255, 255);
-    font-family: Tahoma, Arial, sans-serif;
-    }
-    .popup2 h3 {
-    margin-top: 0;
-    color: rgb(255, 255, 255);
-    font-family: Tahoma, Arial, sans-serif;
-    }
+}
 .popup .close {
 position: absolute;
 top: 20px;
@@ -370,11 +386,11 @@ text-decoration: none;
 color: rgb(255, 255, 255);
 }
 .popup .close:hover {
-    color: #868686;
+color: #868686;
 }
 .popup .content {
-    height: 100%;
-    }
+height: 100%;
+}
 
 @media screen and (max-width: 700px){
 .box{
@@ -384,19 +400,25 @@ width: 70%;
 width: 70%;
 }
 }
+.popup2 .close2 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    }
+    .popup2 .close2:hover {
+    color: #868686;
+    }
 .settingsbutton {
 float: left;
 background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/image.png);
 padding: 25px;
 background-size: 50px;
 transition: all 0.25s ease-in-out;
-}
-.settingsbutton:hover {
-background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/640px-Windows_Settings_app_icon.png);
-animation-name: spin;
-animation-duration: 5000ms;
-animation-iteration-count: infinite;
-animation-timing-function: linear; 
 }
 @keyframes spin {
     from {
@@ -406,9 +428,15 @@ animation-timing-function: linear;
         transform:rotate(360deg);
     }
 }
+.settingsbutton:hover {
+background-image: url(https://raw.githubusercontent.com/astrocore-team/Ultimatesoundboard/main/assets/640px-Windows_Settings_app_icon.png);
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+}
 #toggle {
-    color: white;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
 }
 .dropbtn {
     font-family: Tahoma, Arial, sans-serif;
@@ -428,6 +456,7 @@ animation-timing-function: linear;
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
+    text-align: center;
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -466,20 +495,6 @@ animation-timing-function: linear;
     height: 40px;
   }
 
-@media (max-width: 767px) {
-    .Button {
-        width: 200px;
-        font-size: 13px;
-    }
-    .wide {
-        width: 500px;
-    }
-    #Frequency {
-        width: 500px;
-        }
-        
-}
-  
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd}
   
@@ -487,6 +502,10 @@ animation-timing-function: linear;
   .show {display:block;}
 
   .NSFW {display: none;}
+
+  .content {
+    text-align: center;
+  }
 
   #myBtn {
     display: none; /* Hidden by default */
