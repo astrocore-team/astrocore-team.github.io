@@ -296,3 +296,17 @@ function Favourite(value) {
         }
     }
 }
+
+function dropdownbuttons(value) {
+    value.classList.toggle("active");
+    var content = value.nextElementSibling;
+    if (content.style.maxHeight === "10000px") {
+      content.style.maxHeight = "0px";
+      content.style.padding = "0px";
+      console.log(content.style.maxHeight);
+    } else if (content.style.maxHeight = "0px") { 
+      console.log('2');
+      content.style.maxHeight = "10000px";
+      content.style.padding = null;
+      }
+}
